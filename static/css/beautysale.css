@@ -1,0 +1,1300 @@
+#header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+
+#header li {
+    float: left;
+    padding: 0 10px;
+}
+
+.dorpdown {
+    margin: 0 1px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+#li-sendcity,
+#li-navs {
+    margin: 0;
+}
+
+.dorpdown:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+
+.dorpdown:hover .icon {
+    background: url(../images/beautysale/top/right-ico2.png) no-repeat 0 5px;
+}
+
+.dorpdown:hover i {
+    background-position: 0 -25px;
+}
+
+.dorpdown .dt {
+    position: relative;
+    padding-right: 16px;
+}
+
+.dorpdown .icon {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url(../images/beautysale/top/right-ico1.png) no-repeat 0 5px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.dd .dorpdown-layer {
+    left: -1px;
+}
+
+.dorpdown-layer {
+    top: 29px;
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: 24px;
+    z-index: 99;
+}
+
+#li-sendcity .dorpdown-layer {
+    width: 201px;
+    padding: 10px 0 10px 10px;
+}
+
+#li-sendcity .dorpdown-layer .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#li-sendcity .dorpdown-layer .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#li-sendcity.dorpdown-layer a:hover {
+    background: #f1f1f1;
+}
+
+.dorpdown-layer a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+.dd-spacer {
+    position: absolute;
+    top: -7px;
+    height: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#li-sendcity .dd-spacer {
+    width: 96px;
+    left: 0;
+}
+
+
+/*header fr ²¿·Ö*/
+
+#header li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.fore i {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(../images/beautysale/top/jd2015img.png) no-repeat 0 0;
+    position: absolute;
+    top: 5px;
+    left: -3px;
+}
+
+#li-myjd .dorpdown-layer {
+    width: 201;
+}
+
+#li-myjd .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.user-info {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.u-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.u-pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.otherlist {
+    width: 255px;
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+#li-myjd .fore1,
+#li-myjd .fore2 {
+    float: left;
+    width: 201px;
+}
+
+.viewlist {
+    width: 240px;
+    padding: 0 15px 10px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+}
+
+.smt h4 {
+    float: left;
+}
+
+.smt .extra {
+    float: right;
+}
+
+.viewlist .item {
+    float: left;
+    padding: 4px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.viewlist .item img {
+    width: 50px;
+    height: 50px;
+}
+
+#li-apps .dorpdown-layer {
+    width: 250px;
+}
+
+#li-apps .dt {
+    padding-left: 15px;
+}
+
+#li-apps .dd-spacer {
+    width: 99px;
+    left: 0;
+}
+
+.apps-main {
+    position: relative;
+    width: 250px;
+    height: 195px;
+    overflow: hidden;
+    background: url(../images/beautysale/top/55a35f33Nc664ecff.png);
+}
+
+#li-atte .dorpdown-layer {
+    width: 84px;
+}
+
+#li-atte .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+#li-serv .dorpdown-layer {
+    width: 170px;
+}
+
+#li-serv .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.item-client {
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.serv-item {
+    display: inline-block;
+    width: 65px;
+    padding-left: 15px;
+}
+
+.item-bus {
+    border-top: 1px dotted #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#li-navs .dorpdown-layer {
+    width: 998px;
+    right: -1px;
+    padding: 20px 0 16px;
+}
+
+#li-navs .dd-spacer {
+    width: 84px;
+    right: 0;
+}
+
+#li-navs dl {
+    float: left;
+    width: 201px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+#li-navs .fore1 {
+    width: 301px;
+    border-left: none;
+}
+
+#li-navs dt {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#li-navs .navs-item {
+    width: 75px;
+    float: left;
+}
+
+
+/*
+hear-out区的样式
+
+*/
+
+#head-out {
+    width: 100%;
+}
+
+#slide-banner {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slide-banner a {
+    display: block;
+    background: url(../images/beautysale/top/565e64c2N102feee3.jpg) no-repeat;
+    width: 990px;
+}
+
+#slide-banner .slide-close {
+    width: 16px;
+    height: 16px;
+    background: url(../images/beautysale/top/cosmetic_bg02.png) -37px 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#w-logo {
+    width: 990px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo-2014 {
+    width: 362px;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    position: absolute;
+}
+
+#logo-2014 a {
+    display: block;
+    height: 60px;
+    width: 160px;
+    overflow: hidden;
+}
+
+#logo-2014 .extra {
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    padding-left: 10px;
+    top: 15px;
+    right: 0;
+    background: #fff;
+}
+
+#channel {
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+    font-family: "microsoft yahei";
+    font-size: 20px;
+    line-height: 70px;
+    color: #333;
+}
+
+#categorys {
+    float: left;
+    position: relative;
+    height: 27px;
+    width: 75px;
+    padding-top: 22px;
+    color: #666;
+    font-size: 12px;
+    font-family: "simsun";
+}
+
+#categorys .cw-icon {
+    height: 25px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    padding-right: 2px;
+    overflow: hidden;
+}
+
+#categorys .cw-icon a {
+    display: block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    font-family: 'Microsoft YaHei';
+    color: #666;
+    text-decoration: none;
+    background: url(../images/beautysale/top/right-ico2.png) no-repeat 55px 6px;
+}
+
+#categorys .cw-icon a:hover {
+    color: #C81623;
+    height: 25px;
+    display: block;
+    background: url(../images/beautysale/top/right-ico1.png) no-repeat 55px 8px;
+}
+
+#categorys #categorys-main {
+    position: absolute;
+    top: 50px;
+    left: 1px;
+    display: none;
+    z-index: 11;
+    background: #ccc;
+    height: 375px;
+    width: 151px;
+}
+
+#categorys .dd-space {
+    position: relative;
+    top: -5px;
+    width: 73px;
+    height: 10px;
+    background: #fff;
+    z-index: 11;
+}
+
+#categorys .drop-content {
+    padding: 10px 13px 13px 13px;
+    position: relative;
+    height: 375px;
+    width: 152px;
+    border: 1px solid #ccc;
+    top: -12px;
+    left: -1px;
+    z-index: 10;
+    background: #fff;
+}
+
+#categorys .drop-content a {
+    display: inline;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+}
+
+#seach-2014 {
+    width: 462px;
+    height: 36px;
+    position: absolute;
+    left: 362px;
+    margin-top: 30px;
+    background: #b80e5e;
+}
+
+#seach-2014 .form #key {
+    width: 370px;
+    height: 24px;
+    padding: 4px;
+    float: left;
+    border: 2px solid #b80e5e;
+    color: #666;
+    outline: none;
+}
+
+#seach-2014 .form button {
+    width: 80px;
+    height: 36px;
+    float: left;
+    background: #b80e5e;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+#seach-2014 .form i {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    outline: none;
+}
+
+#settleup {
+    width: 141px;
+    height: 36px;
+    position: absolute;
+    margin-top: 32px;
+    right: 0px;
+}
+
+#settleup .cw-icon {
+    width: 75px;
+    height: 34px;
+    border: 1px solid #ccc;
+    padding-left: 36px;
+    line-height: 34px;
+    background: #F9F9F9;
+    padding-right: 28px;
+    text-align: center;
+    position: relative;
+}
+
+#settleup .ci-left {
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    background: url(../images/beautysale/top/jd2015img.png) no-repeat 0 -92px;
+}
+
+#settleup .ci-center {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    line-height: 12px;
+    top: -4px;
+    left: 104px;
+    background-color: #c81623;
+    border-radius: 7px 7px 7px 0;
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 2px;
+    display: block;
+    color: #fff;
+}
+
+#settleup .ci-right {
+    width: 7px;
+    height: 13px;
+    position: absolute;
+    font-size: 13px;
+    line-height: 13px;
+    top: 11px;
+    right: 10px;
+    color: #999;
+    background: url(../images/beautysale/top/ci-right.png) no-repeat;
+}
+
+#settleup .drop-layer {
+    position: relative;
+    right: 169px;
+    width: 278px;
+    height: 49px;
+    padding: 10px 15px;
+    display: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 11;
+}
+
+#settleup .drop-layer .space {
+    position: absolute;
+    width: 139px;
+    background: #fff;
+    height: 8px;
+    right: 0;
+    top: -7px;
+}
+
+#settleup .drop-layer .prompt {
+    width: 225px;
+    height: 49px;
+    padding-left: 85px;
+    line-height: 49px;
+    font-size: 12px;
+    background: url(../images/beautysale/top/settleup-nogoods.png) no-repeat 30px;
+    color: rgb(153, 153, 153);
+}
+
+#hitworlds {
+    width: 462px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+    left: 362px;
+    line-height: 20px;
+    font-family: Arial, Verdana, "宋体";
+}
+
+#max {
+    height: 1000px;
+    width: 20px;
+}
+
+
+/*
+	nav的style
+*/
+
+#nav {
+    width: 100%;
+    height: 44px;
+    border-bottom: 2px solid #b80e5e;
+}
+
+#nav .w-nav {
+    width: 990px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+#nav .nav-left {
+    width: 190px;
+    height: 44px;
+    background: #b80e5e;
+    color: #fff;
+    text-align: center;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 44px;
+    font-family: "microsoft yahei";
+}
+
+#nav .nav-team {
+    height: 44px;
+    float: left;
+}
+
+#nav .nav-team li {
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#nav .nav-team li a {
+    font-family: "microsoft yahei";
+    line-height: 44px;
+    font-size: 15px;
+    color: #333;
+}
+
+#nav .nav-team li a:hover {
+    color: #C81623;
+}
+
+
+/*
+	first screen
+*/
+
+#first-screen {
+    width: 100%;
+}
+
+#first-screen #p-slider {
+    position: relative;
+}
+
+#p-slider .slider-warp {}
+
+#p-slider .ui-main {
+    height: 420px;
+    width: 100%;
+    position: relative;
+}
+
+#p-slider .ui-main .slider-img {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#p-slider .ui-main .ui-slider-item {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#p-slider .ui-main .slider-img a {
+    display: block;
+    height: 420px;
+    width: 990px;
+}
+
+#first-screen .slider-trigger {
+    position: absolute;
+    top: 390px;
+    z-index: 3;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#first-screen .slider-trigger .trigger {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    background: #3d3d3d;
+    border-radius: 10px;
+    line-height: 20px;
+    font-family: arial;
+}
+
+#first-screen .slider-trigger a:hover {
+    background: #b80e5e;
+}
+
+#p-slider .slider-page {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    height: 60px;
+    text-align: center;
+}
+
+#p-slider .slider-center {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#p-slider .slider-page a {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    color: #dec6d3;
+    background: rgba(54, 44, 57, 0.3);
+}
+
+#p-slider .slider-center .prev {
+    position: absolute;
+    left: 0;
+}
+
+#p-slider .slider-center .next {
+    position: absolute;
+    right: 0;
+}
+
+.cosmetic-adv {
+    text-align: center;
+    border-bottom: 20px solid #fff;
+    background: #f7f7f7;
+}
+
+#today {
+    width: 100%;
+}
+
+#today .w {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#today .mt,
+#time-limit .mt,
+#popular .mt {
+    height: 73px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    background: url(../images/beautysale/everyday/cosmetic_title.jpg) no-repeat;
+}
+
+#today .mt h3,
+#time-limit .mt h3,
+#popular .mt h3 {
+    color: #333;
+    font-size: 28px;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    line-height: 40px;
+    /*
+	position: relative;
+	top:15px;
+	*/
+}
+
+#today .mt h4,
+#time-limit .mt h4,
+#popular .mt h4 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "microsoft yahei";
+    padding-top: 4px;
+    font-weight: normal;
+}
+
+#today .mc,
+#time-limit .mc {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#today .mc .p-img,
+#today .mc .p-img {
+    width: 988px;
+    height: 298px;
+    border: 1px solid #ddd;
+}
+
+#today .mc li {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#today .mc .today-list .p-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-top: 2px solid #362c29;
+    height: 243px;
+    width: 278px;
+    padding: 15px 32px 0;
+    text-align: center;
+}
+
+#today .today-list .p-name {
+    width: 278px;
+    height: 38px;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 38px;
+    font-family: "microsoft yahei";
+}
+
+#time-limit .limit-list .p-info dl a {
+    color: #333;
+}
+
+#time-limit .limit-list .p-info dl a:hover {
+    color: #333;
+}
+
+#today .today-list .p-name a {
+    color: #333;
+    font-weight: bold;
+}
+
+#today .today-list .p-slogan {
+    height: 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "microsoft yahei";
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#today .today-list .p-price {
+    height: 67px;
+    border-top: 1px dotted #ccc;
+    font-size: 32px;
+    line-height: 62px;
+    font-family: "microsoft yahei";
+    color: #b80e5e;
+}
+
+#today .today-list .p-price span {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+#today .today-list .p-buy,
+#time-limit .limit-list .p-buy {
+    height: 37px;
+}
+
+#today .today-list .p-buy .buy-btn,
+#time-limit .limit-list .p-buy .buy-btn {
+    display: inline-block;
+    color: #fff;
+    height: 37px;
+    background: #b80e5e;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 37px;
+    font-family: "microsoft yahei";
+    padding: 0 37px;
+}
+
+#today .today-list .p-buy .buy-btn:hover,
+#time-limit .limit-list .p-buy .buy-btn:hover {
+    background: #d94766;
+}
+
+#time-limit .mc .limit-list-li {
+    width: 990px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#time-limit .mc .p-img {
+    width: 988px;
+    border: 1px solid #ddd;
+}
+
+#time-limit .mc .p-info {
+    width: 417px;
+    padding: 3px 18px 0 18px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background: #fff;
+    z-index: 2;
+}
+
+#time-limit .mc .p-info .time {
+    width: 266px;
+    height: 30px;
+    left: 93px;
+    position: absolute;
+    top: -16px;
+    background: #362c29;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#time-limit .mc .p-info .time i {
+    display: inline-block;
+    height: 18px;
+    width: 14px;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+    background: url(../images/beautysale/hot/cosmetic_bg02.png) no-repeat;
+}
+
+#time-limit .mc .p-info dl {
+    width: 417px;
+    height: 150px;
+    margin-bottom: 35px;
+}
+
+#time-limit .mc .p-info dt {
+    width: 417px;
+    height: 62px;
+    border-bottom: 1px dotted #ccc;
+    font: 22px/66px "microsoft yahei";
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#time-limit .mc .p-info dt a {
+    color: #333;
+}
+
+#time-limit .mc .p-info dd {
+    width: 417px;
+    height: 72px;
+    font: 14px/24px simsum;
+}
+
+#time-limit .mc .p-info .p-price {
+    color: #b80e5e;
+    width: 255px;
+    height: 43px;
+    float: left;
+    font: 27px/37px "microsoft yahei";
+}
+
+#time-limit .mc .p-info .p-price span {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+#time-limit .mc .p-info .p-price .buy-num {
+    color: #999;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+#time-limit .mc .p-info .p-price .num {
+    color: #333;
+}
+
+#time-limit .limit-list .p-buy .buy-btn {
+    float: right;
+}
+
+#brand-sales {
+    margin-bottom: 25px;
+    background: #fff;
+    width: 990px;
+    margin: 0 auto;
+}
+
+#brand-sales .brand-mt {
+    background: url(../images/beautysale/sale/cosmetic_title.jpg) no-repeat 0 -220px;
+}
+
+#brand-sales .brand-mt h3 {
+    font: 28px/40px "microsoft yahei";
+    color: #333;
+}
+
+#brand-sales .brand-mc .brand-list {
+    width: 1002px;
+    height: 423px;
+    margin-top: 10px;
+    margin-right: -12px;
+}
+
+#brand-sales .brand-list li {
+    float: left;
+    margin: 0 11px 11px 0;
+}
+
+#popular .mt {
+    background: url(../images/beautysale/sale/cosmetic_title.jpg) no-repeat 0 -147px;
+    width: 990px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#popular .m {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#popular .popular-mc {
+    width: 1011px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-right: -21px;
+}
+
+#popular .popular-inner {
+    width: 316px;
+    height: 415px;
+    margin-right: 21px;
+    float: left;
+}
+
+#popular .popular-inner .popular-box {
+    width: 294px;
+    height: 350px;
+    margin-bottom: 21px;
+    padding: 27px 10px 15px 10px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+#popular .popular-inner .p-img {
+    width: 294px;
+    height: 260px;
+    text-align: center;
+}
+
+#popular .popular-inner .popular-box i {
+    background: url(../images/beautysale/hot/cosmetic_bg02.png) no-repeat 0 -32px;
+    position: absolute;
+    width: 314px;
+    height: 11px;
+    z-index: 3;
+    display: block;
+    bottom: 99px;
+    left: 0;
+}
+
+#popular .popular-box .p-name {
+    width: 294px;
+    height: 36px;
+    padding-top: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+#popular .popular-box .p-name a {
+    color: #333;
+}
+
+#popular .popular-box .p-name a:hover {
+    color: #333;
+}
+
+#popular .popular-box .fl {
+    position: relative;
+    bottom: -5px;
+    float: left;
+    width: 170px;
+    height: 42px;
+    line-height: 37px;
+}
+
+#popular .popular-box .fl .p-price {
+    height: 29px;
+    font-size: 21px;
+    font-family: "microsoft yahei";
+    padding-right: 5px;
+    color: #b80e5e;
+}
+
+#popular .popular-box .fl .p-price span {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+#popular .popular-box .fr {
+    float: right;
+    width: 120px;
+    height: 37px;
+    text-align: center;
+}
+
+#popular .popular-box .fr .buy-btn {
+    background: #b80e5e;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    width: 120px;
+    height: 37px;
+    font: 20px/37px "microsoft yahei";
+    font-weight: bold;
+}
+
+#popular .popular-box .fr a:hover {
+    background: #d94766;
+}
+
+#service-2014 {
+    margin-bottom: 20px;
+}
+
+#service-2014 .slogen {
+    background: #f5f5f5;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    height: 54px;
+    margin-bottom: 54px;
+}
+
+#service-2014 .slogen .item {
+    width: 220px;
+    height: 54px;
+    display: inline-block;
+    padding: 0 12px;
+}
+
+#service-2014 .slogen .fore1 {
+    background: url(../images/beautysale/logo/service_items_1.png) no-repeat;
+}
+
+#service-2014 .slogen .fore2 {
+    background: url(../images/beautysale/logo/service_items_2.png) no-repeat;
+}
+
+#service-2014 .slogen .fore3 {
+    background: url(../images/beautysale/logo/service_items_3.png) no-repeat;
+}
+
+#service-2014 .slogen .fore4 {
+    background: url(../images/beautysale/logo/service_items_4.png) no-repeat;
+}
+
+#service-2014 .service-center {
+    margin: 0 auto;
+    width: 990px;
+    height: 156px;
+}
+
+#service-2014 .service-center dl {
+    width: 222px;
+    float: left;
+}
+
+#service-2014 .service-center .fore5 {
+    width: 100px;
+}
+
+#service-2014 .service-center dl dt {
+    font: 16px/24px "microsoft yahei";
+    padding: 6px 0;
+}
+
+#service-2014 .service-center dl dd {
+    line-height: 20px;
+}
+
+#service-2014 .service-center dl dd a {
+    color: #666;
+}
+
+#service-2014 .service-center dl dd a:hover {
+    color: #c81623;
+}
+
+#footer {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#footer .footer-2014 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+#footer .footer-2014 .links {
+    height: 18px;
+    text-align: center;
+}
+
+#footer .footer-2014 .links a {
+    margin: 0 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+#footer .footer-2014 .links a:hover {
+    color: #c81623;
+}
+
+#footer .footer-2014 .copyright {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#footer .footer-2014 .authentication {
+    text-align: center;
+}
+
+#footer .footer-2014 .authentication a {
+    margin: 0 5px;
+}
+
+#elevator {
+    z-index: 10;
+    position: fixed;
+    left: 139.5px;
+    top: 134px;
+    display: block;
+    width: 35px;
+    background: #fff;
+}
+
+#elevator .handler {
+    width: 35px;
+    height: 41px;
+    margin-top: -1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#elevator .handler a {
+    padding-top: 5px;
+    color: #666;
+    font-size: 12px;
+    font-family: Arial;
+    display: block;
+    background: url(../images/beautysale/top/down.png) no-repeat 0 2px;
+}
+
+#elevator .handler a:hover {
+    color: #fff;
+}
+
+#elevator .etitle:hover {
+    color: #fff;
+    background: #c81623;
+}
+
+#elevator .current a {
+    background: none;
+}
+
+#go-top {
+    z-index: 10;
+    position: fixed;
+    right: 135.5px;
+    bottom: 0px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+}
+
+#go-top .clearfix a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+}
+
+#text-top1 {
+    width: 42px;
+    height: 42px;
+    font-size: 12px;
+    color: #fff;
+    background: #c81623;
+}
+
+#icon-top1 {
+    background: url(../images/beautysale/top/top.png) no-repeat 0 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+#promotion {
+    position: fixed;
+    right: 44.5px;
+    top: 150px;
+    z-index: 13;
+}

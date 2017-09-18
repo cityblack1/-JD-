@@ -1,0 +1,106 @@
+/*header部分*/
+
+#header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+
+
+/*header fl 部分*/
+
+#header li {
+    float: left;
+    padding: 0 10px;
+}
+
+.dorpdown {
+    margin: 0 1px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+#li-sendcity,
+#li-navs {
+    margin: 0;
+}
+
+.dorpdown:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+
+.dorpdown:hover .icon {
+    background: url(../images/index/header/2.jpg);
+}
+
+.dorpdown:hover i {
+    background-position: 0 -25px;
+}
+
+.dorpdown .dt {
+    position: relative;
+    padding-right: 16px;
+}
+
+.dorpdown .icon {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url(../images/index/header/1.jpg);
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.dd .dorpdown-layer {
+    left: -1px;
+}
+
+.dorpdown-layer {
+    top: 29px;
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: 24px;
+    z-index: 99;
+}
+
+#li-sendcity .dorpdown-layer {
+    width: 301px;
+    padding: 10px 0 10px 10px;
+}
+
+#li-sendcity .dorpdown-layer .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#li-sendcity .dorpdown-layer .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#li-sendcity.dorpdown-layer a:hover {
+    background: #f1f1f1;
+}
+
+.dorpdown-layer a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+.dd-spacer {
+    position: absolute;
+    top: -7px;
+    height: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#li-sendcity .dd-spacer {
+    width: 96px;
+    left: 0;
+}
+

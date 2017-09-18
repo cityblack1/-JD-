@@ -1,0 +1,483 @@
+<!--作者：俞常爽-->
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <title>我的购物车 - 京东商城</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/public/favicon.ico" mce_href="images/public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/shopping-cart.css">
+</head>
+<body>
+    <div class="jd-cart">
+        <!-- header start -->
+        <div id="header">
+            <div class="w clearfix">
+                <ul class="fl">
+                    <li class="dorpdown" id="h-dorpdown">
+                        <div class="h-dorpdown-area icon-right">
+                            <span>送至：北京</span>
+                            <i class="ci-right"></i>
+                        </div>
+                        <div class="dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <div class="layer-content">
+                                <div class="layer-list clearfix">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="fr">
+                    <li class="fore1" id="login">
+                        <a target="_blank" href="javascript:;" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:;" class="link-regist">免费注册</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore2">
+                        <div class="dt">
+                            <a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore3 dorpdown" id="ttbar-myjd">
+                        <div class="dt icon-right">
+                            <a target="_blank" href="http://home.jd.com/">我的京东</a>
+                            <i class="ci-right"></i>
+                        </div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <div class="userinfo clearfix">
+                                <div class="u-pic">
+                                    <a href="http://home.jd.com/"><img src="images/shopping-cart/no-img_mid_.jpg"></a>
+                                </div>
+                                <div class="u-name u-login">
+                                    <a href="javascript:;" class="link-login">你好，请登录</a>
+                                </div>
+                                <div class="u-extra"> <a href="http://quan.jd.com/user_quan.action" target="_blank">优惠券<span id="num-ticket"></span></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://joycenter.jd.com/msgCenter/queryHistoryMessage.action" target="_blank">消息<span id="num-tip"></span></a> </div>
+                            </div>
+                            <div class="otherlist">
+                                <div class="fore1">
+                                    <div class="item">
+                                        <a href="http://order.jd.com/center/list.action" clstag="" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="http://club.jd.com/myjd/userConsultationList_1.html" clstag="" target="_blank">咨询回复<span id="num-consultation"></span></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="http://t.jd.com/product/followProductList.action?isReduce=true" clstag="" target="_blank">降价商品<span id="num-reduction"></span></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="http://myjd.jd.com/repair/orderlist.action" clstag="" target="_blank">返修退换货</a>
+                                    </div>
+                                </div>
+                                <div class="fore2">
+                                    <div class="item">
+                                        <a href="http://t.jd.com/home/follow" clstag="" target="_blank">我的关注</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="http://bean.jd.com/myJingBean/list" clstag="" target="_blank">我的京豆</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="http://trade.jr.jd.com/centre/browse.action" clstag="" target="_blank">我的理财</a>
+                                    </div>
+                                    <div class="item baitiao hide" style="display: block;">
+                                        <a href="http://baitiao.jd.com/" clstag="jr|keycount|njdhome|wdbaitiao" target="_blank">我的白条</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="viewlist">
+                                <div class="smt">
+                                    <h4>我的足迹</h4>
+                                    <span class="extra">
+								        	<a target="_blank" href="http://my.jd.com/history/list.html">更多&nbsp;&gt;</a>
+								        </span>
+                                </div>
+                                <div class="smc">
+                                    <div class="item">
+                                        <a href="http://item.jd.com/2098869.html" target="_blank" title="阿迪达斯ADIDAS 2015冬季 男子跑步系列 跑步鞋 marathon 10 tr m 42.5码 S77542">
+                                            <img src="./images/shopping-cart/56400e37N2681acdec.jpg" alt="阿迪达斯ADIDAS 2015冬季 男子跑步系列 跑步鞋 marathon 10 tr m 42.5码 S77542">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore4">
+                        <div class="dt">
+                            <a target="_blank" href="http://vip.jd.com/">京东会员</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore5">
+                        <div class="dt">
+                            <a target="_blank" href="http://b.jd.com/">企业采购</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore6 dorpdown" id="ttbar-apps">
+                        <div class="dt icon-center">
+                            <i class="ci-left"></i>
+                            <a target="_blank" href="http://app.jd.com/">手机京东</a>
+                            <i class="ci-right"></i>
+                        </div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <div class="dd-inner" id="ttbar-apps-main" style="background: url('images/shopping-cart/55a35f33Nc664ecff.png') no-repeat;">
+                                <a href="http://app.jd.com/" class="link link1" target="_blank">京东客户端</a>
+                                <a href="https://www.wangyin.com/m/index.htm" class="link link3" target="_blank">京东钱包客户端</a>
+                                <a href="http://itunes.apple.com/cn/app/id414245413" class="applink jdapp-ios" target="_blank">京东客户端ios版</a>
+                                <a href="http://3.cn/7DPlbv" class="applink jdapp-android" target="_blank">京东客户端android版</a>
+                                <a href="https://itunes.apple.com/cn/app/jing-dong-hd/id434374726" class="applink jdapp-ipad" target="_blank">京东客户端ipad版</a>
+                                <a href="https://itunes.apple.com/cn/app/wang-yin-qian-bao/id832444218?mt=8" class="applink wyapp-ios" target="_blank">京东钱包客户端ios版</a>
+                                <a href="http://sq.jd.com/vFIRtq" class="applink wyapp-android" target="_blank">京东钱包客户端android版</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore7 dorpdown" id="ttbar-atte">
+                        <div class="dt icon-right">关注京东<i class="ci-right"></i>
+                        </div>
+                        <div class="dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <div class="dd-inner" id="ttbar-atte-main">
+                                <img src="images/shopping-cart/54c84f72Ncc1a02a2.jpg" alt="关注京东">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore8 dorpdown" id="ttbar-serv">
+                        <div class="dt icon-right">客户服务<i class="ci-right"></i></div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <div class="item-client">客户</div>
+                            <div class="item">
+                                <a href="http://help.jd.com/index.html" target="_blank" true="">帮助中心</a>
+                            </div>
+                            <div class="item">
+                                <a href="http://myjd.jd.com/repair/orderlist.action" target="_blank" true="">售后服务</a>
+                            </div>
+                            <div class="item">
+                                <a href="http://chat.jd.com/jdchat/custom.action " target="_blank" true="">在线客服</a>
+                            </div>
+                            <div class="item">
+                                <a href="http://myjd.jd.com/opinion/orderList.action" target="_blank" true="">意见建议</a>
+                            </div>
+                            <div class="item">
+                                <a href="http://www.jd.com/contact/service.html" target="_blank" true="">客服邮箱</a>
+                            </div>
+                            <div class="item-business">商户</div>
+                            <div class="item">
+                                <a href="http://xue.jd.com/" target="_blank" true="">京东商学院</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore9 dorpdown" id="ttbar-navs">
+                        <div class="dt icon-right">网站导航<i class="ci-right"></i></div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dorpdown-spacer"></div>
+                            <dl class="fore1">
+                                <dt>特色主题</dt>
+                                <dd>
+                                    <div class="item"><a href="http://pinpaijie.jd.com/" target="_blank">品牌街</a></div>
+                                    <div class="item"><a href="http://day.jd.com/" target="_blank">今日抄底</a></div>
+                                    <div class="item"><a href="http://hao.jd.com/" target="_blank">好东西</a></div>
+                                    <div class="item"><a href="http://xinpin.jd.com/presale.html " target="_blank">京东预售</a></div>
+                                    <div class="item"><a href="http://jr.jd.com/svip/" target="_blank">尖er货</a></div>
+                                    <div class="item"><a href="http://xinpin.jd.com/new.html" target="_blank">京东首发</a></div>
+                                    <div class="item"><a href="http://tuan.jd.com/homevirtual-beijing.html" target="_blank">今日团购</a></div>
+                                    <div class="item"><a href="http://youhuiquan.jd.com/" target="_blank">优惠券</a></div>
+                                    <div class="item"><a href="http://red.jd.com/" target="_blank">闪购</a></div>
+                                    <div class="item"><a href="http://vip.jd.com/" target="_blank">京东会员</a></div>
+                                    <div class="item"><a href="http://xuan.jd.com/" target="_blank">天天低价</a></div>
+                                    <div class="item"><a href="http://ding.jd.com/" target="_blank">定期送</a></div>
+                                    <div class="item"><a href="http://diy.jd.com/" target="_blank">装机大师</a></div>
+                                    <div class="item"><a href="http://hao.jd.com/hwy.html" target="_blank">新奇特</a></div>
+                                    <div class="item"><a href="http://try.jd.com/" target="_blank">京东试用</a></div>
+                                    <div class="item"><a href="http://gift.jd.com/" target="_blank">礼品购</a></div>
+                                    <div class="item"><a href="http://smarthome.jd.com/" target="_blank">智能馆</a></div>
+                                    <div class="item"><a href="http://sale.jd.com/act/sK60nD3fSIji5.html" target="_blank">玩bigger</a></div>
+                                    <div class="item"><a href="http://sale.jd.com/act/UOtkAQrT0vo73.html" target="_blank">大牌免息</a></div>
+                                    <div class="item"><a href="http://sale.jd.com/act/3je8ZTCxNl6SusId.html " target="_blank">北京老字号</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore2">
+                                <dt>行业频道</dt>
+                                <dd>
+                                    <div class="item"><a href="http://channel.jd.com/fashion.html" target="_blank">服装城</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/electronic.html" target="_blank">家用电器</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/computer.html" target="_blank">电脑办公</a></div>
+                                    <div class="item"><a href="http://shouji.jd.com/" target="_blank">手机</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/beauty.html" target="_blank">美妆馆</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/chaoshi.html" target="_blank">食品</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/digital.html" target="_blank">数码</a></div>
+                                    <div class="item"><a href="http://baby.jd.com/" target="_blank">母婴</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/jiazhuang.html" target="_blank">家装城</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/sports.html" target="_blank">运动户外</a></div>
+                                    <div class="item"><a href="http://car.jd.com" target="_blank">整车</a></div>
+                                    <div class="item"><a href="http://book.jd.com/" target="_blank">图书</a></div>
+                                    <div class="item"><a href="http://nong.jd.com/" target="_blank">农资频道</a></div>
+                                    <div class="item"><a href="http://smart.jd.com/" target="_blank">京东智能</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore3">
+                                <dt>生活服务</dt>
+                                <dd>
+                                    <div class="item"><a href="http://z.jd.com/" target="_blank">京东众筹</a></div>
+                                    <div class="item"><a href="http://baitiao.jd.com/activity/third" target="_blank">白条</a></div>
+                                    <div class="item"><a href="https://www.jdpay.com/" target="_blank">京东钱包</a></div>
+                                    <div class="item"><a href="http://trade.jr.jd.com/myxjk/jrbincome.action" target="_blank">京东小金库</a></div>
+                                    <div class="item"><a href="http://licai.jd.com/" target="_blank">理财</a></div>
+                                    <div class="item"><a href="http://chongzhi.jd.com/" target="_blank">话费</a></div>
+                                    <div class="item"><a href="http://trip.jd.com/" target="_blank">旅行</a></div>
+                                    <div class="item"><a href="http://caipiao.jd.com/" target="_blank">彩票</a></div>
+                                    <div class="item"><a href="http://game.jd.com/" target="_blank">游戏</a></div>
+                                    <div class="item"><a href="http://ijipiao.jd.com/" target="_blank">机票</a></div>
+                                    <div class="item"><a href="http://movie.jd.com/" target="_blank">电影票</a></div>
+                                    <div class="item"><a href="http://jiaofei.jd.com/" target="_blank">水电煤</a></div>
+                                    <div class="item"><a href="http://daojia.jd.com/html/welcome.html" target="_blank">京东到家</a></div>
+                                    <div class="item"><a href="http://smartcloud.jd.com/app" target="_blank">京东微联</a></div>
+                                    <div class="item"><a href="http://try.smart.jd.com/" target="_blank">京东众测</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore4">
+                                <dt>更多精选</dt>
+                                <dd>
+                                    <div class="item"><a href="http://club.jd.com/" target="_blank">京东社区</a></div>
+                                    <div class="item"><a href="http://mobile.jd.com/index.do" target="_blank">京东通信</a></div>
+                                    <div class="item"><a href="http://read.jd.com/" target="_blank">在线读书</a></div>
+                                    <div class="item"><a href="http://giftcard.jd.com/market/index.action" target="_blank">京东E卡</a></div>
+                                    <div class="item"><a href="http://group.jd.com/site/20000121/20000032.htm" target="_blank">智能社区</a></div>
+                                    <div class="item"><a href="http://group.jd.com/index/20000001.htm" target="_blank">游戏社区</a></div>
+                                    <div class="item"><a href="http://you.jd.com/index.html?entrance=jd_home" target="_blank">京友邦</a></div>
+                                    <div class="item"><a href="http://sale.jd.com/act/wQTpIm7GnXE.html" target="_blank">卖家入驻</a></div>
+                                    <div class="item"><a href="http://b.jd.com/" target="_blank">企业采购</a></div>
+                                    <div class="item"><a href="http://fw.jd.com/" target="_blank">服务市场</a></div>
+                                    <div class="item"><a href="http://zhaomu.jd.com/XCDLzm.html" target="_blank">乡村招募</a></div>
+                                    <div class="item"><a href="http://zhaomu.jd.com/intro.html" target="_blank">校园加盟</a></div>
+                                    <div class="item"><a href="http://channel.jd.com/office.html" target="_blank">办公生活馆</a></div>
+                                    <div class="item"><a href="http://ipr.jd.com/" target="_blank">知识产权维权</a></div>
+                                    <div class="item"><a href="http://en.jd.com/" target="_blank">English Site</a></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- nav start -->
+        <div id="nav" class="w">
+            <div id="logo">
+                <img src="./images/shopping-cart/logo-201305.png" alt="pic">
+            </div>
+            <div class="cart-search">
+                <div class="form">
+                    <input id="key" type="text" autocomplete="off" placeholder="自营">
+                    <input id="form-button" type="button" value="搜索">
+                </div>
+            </div>
+        </div>
+        <!-- nav end -->
+        <!-- content start -->
+        <div id="cart-wrap">
+            <div class="cart-filter-bar">
+                <h2 class="cart-filter-bar-title">全部商品 1</h2>
+                <div class="w-line"></div>
+            </div>
+            <div class="cart-thead">
+                <div class="cart-checkbox line-position">
+                    <input class="all-checked" type="checkbox" name="all-check" checked="true">
+                    <span>全选</span>
+                </div>
+                <div class="cart-goods line-position">商品</div>
+                <div class="cart-price line-position">单价（元）</div>
+                <div class="cart-quantity line-position">数量</div>
+                <div class="cart-sum line-position">小计（元）</div>
+                <div class="cart-action line-position">操作</div>
+            </div>
+            <div class="item-list clearfix">
+                <div class="item-header">
+                    <a class="item-header-txt">
+                        <div class="item-header-txt-icon">满减</div>
+                        <span>活动商品已购满777.77元（</span>
+                        <span class="ftx-01">已减100.00</span>
+                        <span>）></span>
+                    </a>
+                    <a class="ftx-05" href="#">去凑单></a>
+                    <div class="f-price">
+                        <strong>777.77 </strong>
+                        <span class="ftx-01">减：100.00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-checkbox">
+                        <input type="checkbox" name="item-check" checked="">
+                    </div>
+                    <div class="item-content">
+                        <img src="./images/shopping-cart/56400e37N2681acde.jpg" alt="pic">
+                        <a class="item-introduction" href="#">阿迪达斯ADIDAS 2015冬季 男子跑步系列 跑步鞋 marathon 10 tr m 42.5码 S77542
+							</a>
+                    </div>
+                    <div class="item-props">
+                        <span class="props-txt">颜色：黑色</span>
+                        <span class="props-txt">尺码：42.5</span>
+                    </div>
+                    <div class="item-price">
+                        <strong>777.77</strong>
+                        <a class="sales-promotion" href="#">促销优惠<b></b></a>
+                    </div>
+                    <div class="item-quantity">
+                        <div class="quantity-form">
+                            <a class="subtract" href="#">-</a>
+                            <input type="text" autocomplete="off" value="1">
+                            <a class="add" href="#">+</a>
+                            <span>有货</span>
+                        </div>
+                    </div>
+                    <div class="item-sum">
+                        <strong>777.77</strong>
+                    </div>
+                    <div class="item-ops">
+                        <a href="#">删除</a>
+                        <a href="#">移到我的关注</a>
+                    </div>
+                </div>
+            </div>
+            <div class="options-box clearfix">
+                <div class="select-all">
+                    <input class="all-checked" type="checkbox" name="all-check" checked="true">
+                    <span>全选</span>
+                </div>
+                <div class="operation">
+                    <a href="#">删除选中的商品</a>
+                    <a href="#">移到我的关注</a>
+                </div>
+                <div class="btn-area">
+                    <a href="#">去结算</a>
+                </div>
+                <div class="price-sum">
+                    <span>总价（不含运费）：</span>
+                    <div class="price-sumPrice">
+                        <em>￥539.00</em>
+                    </div>
+                    <span class="price-txt">已节省：</span>
+                    <span class="price-totalRePrice">-￥100.00</span>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+        <!-- service start -->
+        <div id="service">
+            <div class="slogen">
+                <span class="item fore1">
+			      <i></i><b>多</b>品类齐全，轻松购物
+			  </span>
+                <span class="item fore2">
+			      <i></i><b>快</b>多仓直发，极速配送
+			  </span>
+                <span class="item fore3">
+			      <i></i><b>好</b>正品行货，精致服务
+			  </span>
+                <span class="item fore4">
+			      <i></i><b>省</b>天天低价，畅选无忧
+			  </span>
+            </div>
+            <div class="w">
+                <dl class="fore1">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-29.html">购物流程</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-151.html">会员介绍</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-297.html">生活旅行/团购</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue.html">常见问题</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-136.html">大家电</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/index.html">联系客服</a></div>
+                    </dd>
+                </dl>
+                <dl class="fore2">
+                    <dt>配送方式</dt>
+                    <dd>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81-100.html">上门自提</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81.html">211限时达</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/103-983.html">配送服务查询</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/109-188.html">配送费收取标准</a></div>
+                        <div><a target="_blank" href="#">海外配送</a></div>
+                    </dd>
+                </dl>
+                <dl class="fore3">
+                    <dt>支付方式</dt>
+                    <dd>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-172.html">货到付款</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-173.html">在线支付</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-176.html">分期付款</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-174.html">邮局汇款</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-175.html">公司转账</a></div>
+                    </dd>
+                </dl>
+                <dl class="fore4">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/321-981.html">售后政策</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-132.html">价格保护</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/130-978.html">退款说明</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://myjd.jd.com/repair/repairs.action">返修/退换货</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-50.html">取消订单</a></div>
+                    </dd>
+                </dl>
+                <dl class="fore5">
+                    <dt>特色服务</dt>
+                    <dd>
+                        <div><a target="_blank" href="http://help.jd.com/user/issue/list-133.html">夺宝岛</a></div>
+                        <div><a target="_blank" href="http://help.jd.com/user/issue/list-134.html">DIY装机</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://fuwu.jd.com/">延保服务</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://giftcard.jd.com/market/index.action">京东E卡</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://mobile.jd.com/">京东通信</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://s.jd.com/">京东JD+</a></div>
+                    </dd>
+                </dl>
+                <span class="clr"></span>
+            </div>
+        </div>
+        <!-- service end -->
+        <!-- footer start -->
+        <div class="w clearfix">
+            <div id="footer">
+                <div class="links">
+                    <a rel="nofollow" target="_blank" href="http://www.jd.com/intro/about.aspx">关于我们</a>|<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/">联系我们</a>|<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/joinin.aspx">商家入驻</a>|<a rel="nofollow" target="_blank" href="http://jzt.jd.com">营销中心</a>|<a rel="nofollow" target="_blank" href="http://app.jd.com/">手机京东</a>|<a target="_blank" href="http://club.jd.com/links.aspx">友情链接</a>|<a target="_blank" href="http://media.jd.com/">销售联盟</a>|<a href="http://club.jd.com/" target="_blank">京东社区</a>|<a href="http://gongyi.jd.com" target="_blank">京东公益</a>|<a href="http://en.jd.com/" target="_blank">English Site</a>|<a href="http://en.jd.com/help/question-58.html" target="_blank">Contact Us</a>
+                </div>
+                <div class="copyright">
+                    北京市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="http://img14.360buyimg.com/da/jfs/t256/349/769670066/270505/3b03e0bb/53f16c24N7c04d9e9.jpg">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大120007号
+                    <br><a rel="nofollow" href="http://misc.360buyimg.com/skin/df/i/com/f_music.jpg" target="_blank">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号
+                    <br><a href="http://misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a>&nbsp;&nbsp;违法和不良信息举报电话：4006561155&nbsp;&nbsp;Copyright&nbsp;&copy;&nbsp;2004-2015&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+                    <br>京东旗下网站：<a target="_blank" href="http://www.360top.com/">360TOP</a>&nbsp;&nbsp;<a href="http://www.paipai.com/" target="_blank">拍拍网</a>&nbsp;&nbsp;<a href="https://www.wangyin.com/" target="_blank">网银在线</a>
+                </div>
+                <div class="authentication">
+                    <a rel="nofollow" target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026">
+                        <img width="103" height="32" alt="经营性网站备案中心" src="./images/shopping-cart/54b8871eNa9a7067e.png" />
+                    </a>
+                    <a rel="nofollow" target="_blank" id="urlknet" tabindex="-1" href="https://ss.knet.cn/verifyseal.dll?sn=2008070300100000031&amp;ct=df&amp;pa=294005">
+                        <img border="true" width="103" height="32" onclick="CNNIC_change('urlknet')" oncontextmenu="return false;" name="CNNIC_seal" alt="可信网站" src="./images/shopping-cart/54b8872dNe37a9860.png" />
+                    </a>
+                    <a rel="nofollow" target="_blank" href="http://www.bj.cyberpolice.cn/index.do">
+                        <img width="103" height="32" alt="朝阳网络警察" src="./images/shopping-cart/54b8874bN694454a5.png" />
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120111001803001836">
+                        <img width="103" height="32" src="./images/shopping-cart/54b8875fNad1e0c4c.png" />
+                    </a>
+                    <a target="_blank" href="http://jubao.china.cn:13225/reportform.do">
+                        <img width="185" height="32" src="./images/shopping-cart/54b8863dN8d2c61ec.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <script src="./js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="./js/shopping-cart.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,611 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ product.name }} - 京东</title>
+		<link rel="icon" href="{% static "img/favicon.ico" %}" />
+		<link rel="stylesheet" type="text/css" href="{% static "css/details.css" %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" />
+            <link rel="stylesheet" href="{% static "css/reset.css" %}">
+
+
+		<script type="text/javascript" src="{% static "js/details.js" %}">
+
+		</script>
+ 	</head>
+
+	<body>
+    {% include 'nav.html' %}
+		<!--顶部导航栏-->
+		<!--顶部导航栏END-->
+		<!--头部搜索-->
+		<div id="search">
+			<div class="content">
+				<div class="logo">
+					<a></a>
+				</div>
+				<div class="seek">
+					<form action="" method="post" style="margin-top: 25px;">
+						<input type="text" placeholder="魅族新品" class="key1"/>
+						<input type="submit" value="搜索" class="sk_a"/>
+					</form>
+				</div>
+				<div class="hotword">
+					<ul>
+						<li><a href="#" class="hw_a">iphone</a></li>
+						<li><a href="#" class="hw_a">新机专场</a></li>
+						<li><a href="#" class="hw_a">诺基亚6</a></li>
+						<li><a href="#" class="hw_a">1元抢手机</a></li>
+						<li><a href="#" class="hw_a">1元800M</a></li>
+						<li><a href="#" class="hw_a">红米4X</a></li>
+						<li><a href="#" class="hw_a">联想5折</a></li>
+						<li><a href="#" class="hw_a">京选卖家</a></li>
+					</ul>
+				</div>
+				<div class="shopcar">
+					<b></b>
+					<a href="#">我的购物车</a>
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+				
+		<!--头部搜索END-->
+		<!--导航栏-全部商品分类-->
+		<div id="bars">
+			<div class="content">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">手机首页</a></li>
+					<li><a href="#">新机发布</a></li>
+					<li><a href="#">网上营业厅</a></li>
+					<li><a href="#">京选卖家</a></li>
+					<li><a href="#">配件中心</a></li>
+					<li><a href="#">手机社区</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-全部商品分类 END-->
+		<!--手机分类-->
+		<div id="phone">
+			<div class="content">
+				<ul style="float: left;">
+					<li><a href="#">首页</a></li>
+					<li><img src="{% static "img/right1.png" %}"/></li>
+					<li><a href="#">手机</a></li>
+					<li><img src="{% static "img/right1.png" %}"/></li>
+					<li><a href="#">魅族PRO 6 Plus</a></li>
+				</ul>
+				
+				<div class="right">
+					<a href="#">{{ product.shop.name }}</a>
+					<p class="rp_4"><b class="a">JD</b ><span class="b">自营</span></p>
+				</div>
+			</div>
+			
+		</div>
+		<!--手机分类END-->
+		
+		<!--选择手机版本-->
+		<div id="type">
+			<div class="content">
+				<div class="box1">
+					<div class="b1_top">
+						<img src="{{ MEDIA_URL }}{{ product.image }}"/>
+					</div>
+					<div class="b1_bottom">
+					</div>
+				</div>
+				<div class="box2">
+					<h4 style="color: #666666;font-size:16pt;margin: 15px 0 10px">{{ product.name }}</h4>
+					<p style="font-size: 12px;color: #E4393C;">{{ product.ad }}</p>
+					<div class="price">
+						<div class="pc1">
+							<div class="dt">京&nbsp;&nbsp;东&nbsp;&nbsp;价</div>
+							<span >￥{{ product.price|floatformat:2 }}</span>
+						</div>
+					</div>
+					<div class="suport">
+						<div class="dt">支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持</div>
+                        {% for sup in product.support.all %}
+						<p><span></span><a href="#">{{ sup.name }}</a></p>
+                        {% endfor %}
+					</div>
+					<div class="delivery">
+						<div class="dv_a">
+							<div class="dt">配&nbsp;&nbsp;送&nbsp;&nbsp;至</div>
+							<p>北京朝阳区三环以内<span></span></p>
+							<b style="color: #999999;padding: 0 5px;float: left;">有货</b>
+							<p style="padding:0 15px;">支持</p>
+							<ul>
+								<li><a href="#">99元免基础运费(50kg内)</a></li>
+								<li class="sp"></li>
+								<li><a href="#">货到付款</a></li>
+								<li class="sp"></li>
+								<li><a href="#">京准达</a></li>
+								<li><b></b></li>
+							</ul>
+						</div>
+						<div class="dv_b">由 京东 发货，{{ product.shop.name }}提供售后服务。23:00前完成下单,预计<b>明天(04月10日)</b>送达</div>
+						<div class="dv_c">
+							<div class="dt">重&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</div>
+							<p>0.54kg</p>
+						</div>					
+					</div>
+					<div class="top_line1"></div>
+					<div class="chose">
+						<div class="dt">选择颜色</div>
+                        {% for cor in product.color.all %}
+                        <a href="#"><img src="{{ MEDIA_URL }}{{ cor.image }}"/><span>{{ cor.name }}</span></a>
+                        {% endfor %}
+					</div>
+					<div class="service">
+						<div class="dt">增值保障</div>
+						<ul>
+                            {% for pro in product.promise.all %}
+							<li>
+								<p>{{ pro.name }}</p>
+								<b></b>
+							</li>
+                            {% endfor %}
+						</ul>
+					</div>
+					<div class="free">
+						<div class="dt">白条分期</div>
+                        {% for whi in product.whitetip_set.all %}
+						<a href="#">{{ whi.name }}</a>
+                        {% endfor %}
+						<img src="{% static "img/hui.png" %}" />
+					</div>
+					<div class="top_line1"></div>
+					<div class="addto_shopcar">
+						<div class="as_a">
+							<p id="texts" >1</p>
+							<a id="add">+</a>
+							<a style="border-bottom: 0px;" id="sub">-</a>							
+						</div>
+						<button class="as_btn">加入购物车</button> 
+					</div>
+					<div class="tips">
+						<div class="dt">温馨提示</div>
+						<a>·支持7天无理由退货</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--选择手机版本END-->
+		
+		<!--人气配件-->
+		<div id="parts">
+			<div class="content">
+				<ul>
+					<li><a href="#" class="ct_a">相关推荐</a></li>
+					<li><a href="#" class="ct_b">更多</a></li>
+				</ul>
+                {% for rec in rec_pros %}
+				<div class="ct_list">
+					<div class="c1">
+						<a href="#"><img src="{{ MEDIA_URL }}{{ rec.image }}"/></a>
+					</div>
+					<div class="c2">
+						<a>{{ rec.name }}</a>
+					</div>
+				</div>
+                {% endfor %}
+
+			</div>
+		</div>
+		<!--人气配件END-->
+		
+		<!--图文详情-->
+			<div id="imgBox">
+				<div class="content">
+					<div class="ltCase">
+						<div class="box1">
+							<p class="a">
+								<a href="#">魅族官方旗舰店</a>
+								<b></b>
+							</p>
+							<p class="b">
+								<a href="#">
+									<b></b>
+									<span>进店看看</span>
+								</a>
+								<a href="#">
+									<em></em>
+									<span>关注店铺</span>
+								</a>
+							</p>
+						</div>
+						<div class="box2">
+							<p class="a">
+								<a href="#">关于手机，你可能在找</a>
+							</p>
+							<ul>
+								<li>
+									<a href="#">安卓（Android）</a>
+								</li>
+								<li>
+									<a href="#">5.6英寸及以上</a>
+									<a href="#">指纹识别</a>
+								</li>
+								<li>
+									<a href="#">双卡双待</a>
+									<a href="#">金属机身</a>
+									<a href="#">4GB</a>
+								</li>
+								<li>
+									<a href="#">联通4G</a>
+									<a href="#">移动4G</a>
+									<a href="#">64GB</a>
+								</li>
+								<li>
+									<a href="#">八核</a>
+								</li>
+							</ul>
+						</div>
+						<div class="box3">
+							<p class="a">
+								<a href="#">手机热销榜</a>
+							</p>
+							<ul class="a">
+								<li style="background-color: #E4393C;"><a style="color:#FFF;">同价位</a></li>
+								<li><a href="#">同品牌</a></li>
+								<li><a href="#">总排行</a></li>
+							</ul>
+							<ul class="b">
+								<li>
+									<img src="{% static "img/ph1.jpg" %}"/>
+									<a href="#">华为荣耀8</a>
+									<b>￥2299.00</b>
+									<p style="background-color: #E4393C;">1</p>
+								</li>
+								<li>
+									<img src="{% static "img/ph2.jpg" %}"/>
+									<a href="#">华为 Mate9</a>
+									<b>￥3399.00</b>
+									<p style="background-color: #E4393C;">2</p>
+								</li>
+								<li>
+									<img src="{% static "img/ph3.jpg" %}"/>
+									<a href="#">一加3T</a>
+									<b>￥2699.00</b>
+									<p style="background-color: #E4393C;">3</p>
+								</li>
+								<li>
+									<img src="{% static "img/ph4.jpg" %}"/>
+									<a href="#">OPPOR9s</a>
+									<b>￥2799.00</b>
+									<p style="background-color: #D5D5D5;">4</p>
+								</li>
+								<li>
+									<img src="{% static "img/ph5.png" %}"/>
+									<a href="#">vivo X9 全网通 4GB+64GB 移动</a>
+									<b>￥2798.00</b>
+									<p style="background-color: #D5D5D5;">5</p>
+								</li>
+								<li>
+									<img src="{% static "img/ph6.jpg" %}"/>
+									<a href="#">华为荣耀V8</a>
+									<b>￥2299.00</b>
+									<p style="background-color: #D5D5D5;">6</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="rtCase">
+						<ul class="a">
+							<li style="background-color: #E4393C;"><a href="#" style="color: #FFF;">商品介绍</a></li>
+							<li><a href="#">规格与包装</a></li>
+							<li><a href="#">售后保障</a></li>
+							<li><a href="#">商品评价(2500+)</a></li>
+							<li><a href="#">手机社区</a></li>
+							<a href="#" class="one">加入购物车</a>
+						</ul>
+						<div class="box3">
+						</div>
+						<div class="top_line"></div>
+						<div class="box5">
+                            {{ product.detail|safe }}
+                            {% comment %}
+                            这里是detail字段
+							<img src="{% static "img/rs1.jpg" %}" />
+							<img src="{% static "img/rs2.jpg" %}" />
+							<img src="{% static "img/rs3.jpg" %}" />
+							<img src="{% static "img/rs4.jpg" %}" />
+							{% endcomment %}
+						</div>
+						<div class="box7">
+							<b>商品评价</b>
+						</div>
+						<div class="box10">
+							<div class="percent">
+								<p>好评度</p>
+								<h1>95<span>%</span></h1>
+							</div>
+							<div class="list">
+								<span>外观漂亮(9)</span>
+								<span>分辨率高(8)</span>
+								<span>金属机身(6)</span>
+								<span>照相不错(5)</span>
+								<span>屏幕大(10)</span>
+								<span>反应快(4)</span>
+								<span>功能齐全(4)</span>
+								<span>支持国产(4)</span>
+								<span>系统流畅(3)</span>
+								<span>指纹识别(13)</span>
+							</div>
+						</div>
+						<div class="box11">
+							<ul >
+								<li><a href="#">全部评价(2600+)</a></li>
+							</ul>
+							<form>
+							</form>
+							<p>
+								<span style="float: left;">时间排序</span>
+								<b></b>
+							</p>
+
+						</div>
+						<div class="box12">
+							<div class="name">
+								<p><b></b>香***杰</p>
+								<p>钻石会员&nbsp;&nbsp;&nbsp;广东</p>
+							</div>
+							<div class="discuss">
+								<b></b>
+								<p>非常不错，漂亮，流畅</p>
+								<p>
+									<span>月光银</span>
+									<span>64G</span>
+									<span>标配版</span>
+									<span>017-04-12 10:21</span>
+									<a href="#">
+										<b></b>
+										0
+									</a>
+									<a href="#">
+										<em></em>
+										0
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="top_line"></div>
+						<div class="box12">
+							<div class="name">
+								<p><b></b> j***r</p>
+								<p>银牌会员&nbsp;&nbsp;&nbsp;河北</p>
+							</div>
+							<div class="discuss">
+								<b></b>
+								<p>手机不错，可是包装也太简便了吧，毕竟3000多的机子，手机说实话没什么性价比，不过确实颜值秒杀国产机，听说系统很好，没用过所有没有发言权，屏幕很惊艳，2k就是6,就这么多吧希望质量没有问题，我对性能没什么要求，过得去就行!希望可以挺2年！！！还有前50名评论有蓝牙音响去应该是前50吧，麻烦客服妹妹回答我多少名谢谢</p>
+								<p>
+									<img src="{% static "img/discuss.jpg" %}"/>
+									<img src="{% static "img/discuss1.jpg" %}"/>
+									<img src="{% static "img/discuss2.jpg" %}"/>
+									<img src="{% static "img/discuss3.jpg" %}"/>
+									<img src="{% static "img/discuss4.jpg" %}"/>
+									<img src="{% static "img/discuss5.jpg" %}"/>
+								</p>
+								<p>
+									<span>深空灰</span>
+									<span>64G</span>
+									<span>标配版</span>
+									<span>2017-04-10 14:52</span>
+									<a href="#">
+										<b></b>
+										0
+									</a>
+									<a href="#">
+										<em></em>
+										0
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="top_line"></div>
+						<div class="ui-page">
+							<a href="#">下一页</a>
+							<span>...</span>
+							<a href="#">6</a>
+							<a href="#">5</a>
+							<a href="#">4</a>
+							<a href="#">3</a>
+							<a href="#">2</a>
+							<a href="#">1</a>
+							<a href="#" style="display: none;">上一页</a>
+						</div>
+						<div class="box7">
+							<b style="float: left;">购买咨询</b>
+							<a href="#" class="bx_a">发表咨询</a>
+							<a href="#" class="bx_b"><b></b>联系供应商</a>
+						</div>
+						<ul class="current">
+							<li><a href="#" style="color: #E45D5F;">全部</a></li>
+							<li><a href="#">商品咨询</a></li>
+							<li><a href="#">库存配送</a></li>
+							<li><a href="#">支付</a></li>
+							<li><a href="#">发票保修</a></li>
+						</ul>
+						<div class="search">
+							<p>温馨提示：因每位咨询者购买情况、咨询时间等不同，以下回复对咨询者3天内有效，其他网友仅供参考。</p>
+							<form action="" method="post">
+								<input type="text" class="key"/>
+								<input type="submit" value="搜索" class="sk_a"/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--图文详情END-->
+        <div id="end">
+			<div class="end_content">
+				<div class="ec_top">
+					<div class="ec1">
+						<ul>
+							<li>
+								<img src="{% static "img/ed1.png" %}">
+								<b>品类齐全，轻松购物</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed2.png" %}">
+								<b>多仓直发，急速配送</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed3.png" %}">
+								<b>正品行货，精致服务</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed4.png" %}">
+								<b>天天低价，畅选无忧</b>
+							</li>
+						</ul>
+					</div>
+					<p class="top_line"></p>
+				</div>
+
+				<div class="ec_ct">
+					<ul>
+						<li><b style="font-size: 14px;">购物指南</b></li>
+						<li><a href="#" class="et1">购物流程</a></li>
+						<li><a href="#" class="et1">会员介绍</a></li>
+						<li><a href="#" class="et1">生活旅行</a></li>
+						<li><a href="#" class="et1">常见问题</a></li>
+						<li><a href="#" class="et1">大家电</a></li>
+						<li><a href="#" class="et1">联系客服</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">配送方式</b></li>
+						<li><a href="#" class="et1">上门自提</a></li>
+						<li><a href="#" class="et1">211限时达</a></li>
+						<li><a href="#" class="et1">配送服务查询</a></li>
+						<li><a href="#" class="et1">配送费收取标准</a></li>
+						<li><a href="#" class="et1">海外配送</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">支付方式</b></li>
+						<li><a href="#" class="et1">在线支付</a></li>
+						<li><a href="#" class="et1">货到付款</a></li>
+						<li><a href="#" class="et1">分期付款</a></li>
+						<li><a href="#" class="et1">邮局汇款</a></li>
+						<li><a href="#" class="et1">公司转账</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">售后服务</b></li>
+						<li><a href="#" class="et1">售后政策</a></li>
+						<li><a href="#" class="et1">价格保护</a></li>
+						<li><a href="#" class="et1">退款说明</a></li>
+						<li><a href="#" class="et1">返修/退换货</a></li>
+						<li><a href="#" class="et1">取消订单</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">特色服务</b></li>
+						<li><a href="#" class="et1">夺宝岛</a></li>
+						<li><a href="#" class="et1">DIY装机</a></li>
+						<li><a href="#" class="et1">延保服务</a></li>
+						<li><a href="#" class="et1">京东E卡</a></li>
+						<li><a href="#" class="et1">京东通信</a></li>
+						<li><a href="#" class="et1">京东JD+</a></li>
+					</ul>
+					<div class="ec_r">
+						<b style="font-size: 14px;">京东自营覆盖区县</b>
+						<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+						<p style="float: right;"><a href="#" class="et1">查看详情&gt;</a></p>
+					</div>
+
+				</div>
+				<p class="top_line"></p>
+				<div class="ec_link">
+					<ul>
+						<li><a href="#" class="ecl1">关于我们</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">联系我们</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">联系客服</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">合作招商</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">营销中心</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">手机京东</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">友情链接</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">销售联盟</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">京东社区</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">风险监测</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">隐私政策</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">京东公益</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">English Site</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="ec_b" "="">
+					<p>
+						<a href="#" class="eb1">京公网安备 11000002000088号</a>
+						<span class="sp"></span>
+						<a class="eb1">京ICP证070359号</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+						<span class="sp"></span>
+						<a class="eb1">新出发京零 字第大120007号</a>
+					</p>
+					<p>
+						<a class="eb1">互联网出版许可证编号新出网证(京)字150号</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">出版物经营许可证</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">网络文化经营许可证京网文[2014]2148-348号</a>
+						<span class="sp"></span>
+						<a class="eb1">违法和不良信息举报电话：4006561155</a>
+					</p>
+					<p>
+						<a class="eb1">Copyright © 2004 - 2017  京东JD.com 版权所有</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">消费者维权热线：4006067733经营证照</a>
+					</p>
+					<p>
+						<a class="eb1">京东旗下网站：</a>
+						<a href="#" class="eb1">京东钱包</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">京东云</a>
+					</p>
+					<p>
+						<img src="{% static "img/end1.png" %}">
+						<img src="{% static "img/end2.png" %}">
+						<img src="{% static "img/end3.png" %}">
+						<img src="{% static "img/end4.png" %}">
+						<img src="{% static "img/end5.png" %}">
+						<img src="{% static "img/end6.png" %}">
+					</p>
+				</div>
+			</div>
+
+		<!--结尾END-->
+	</body>
+</html>
+<script>
+	var aObj=document.getElementById('add');
+	aObj.onclick=function(){
+		var x=document.getElementById("texts").innerHTML;
+		a=parseInt(x)+1;
+		document.getElementById("texts").innerHTML=a;
+	}
+	var aObj=document.getElementById('sub');
+	aObj.onclick=function(){
+		var x=document.getElementById("texts").innerHTML;
+		a=parseInt(x)-1;
+		if(a>=1){
+			document.getElementById("texts").innerHTML=a;
+		}
+	}
+</script>

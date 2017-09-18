@@ -1,0 +1,703 @@
+{% load staticfiles %}
+
+<style>
+
+
+    /*header部分*/
+
+#header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+
+
+/*header fl 部分*/
+
+#header li {
+    float: left;
+    padding: 0 10px;
+}
+
+.dorpdown {
+    margin: 0 1px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+#li-sendcity,
+#li-navs {
+    margin: 0;
+}
+
+.dorpdown:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+
+.dorpdown:hover .icon {
+    background: url(//127.0.0.1:8000/static/images/index/header/2.jpg)
+}
+
+.dorpdown:hover i {
+    background-position: 0 -25px;
+}
+
+.dorpdown .dt {
+    position: relative;
+    padding-right: 16px;
+}
+
+.dorpdown .icon {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url(//127.0.0.1:8000/static/images/index/header/1.jpg);
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.dd .dorpdown-layer {
+    left: -1px;
+}
+
+.dorpdown-layer {
+    top: 29px;
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: 24px;
+    z-index: 99;
+}
+
+#li-sendcity .dorpdown-layer {
+    width: 301px;
+    padding: 10px 0 10px 10px;
+}
+
+#li-sendcity .dorpdown-layer .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#li-sendcity .dorpdown-layer .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#li-sendcity.dorpdown-layer a:hover {
+    background: #f1f1f1;
+}
+
+.dorpdown-layer a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+.dd-spacer {
+    position: absolute;
+    top: -7px;
+    height: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#li-sendcity .dd-spacer {
+    width: 96px;
+    left: 0;
+}
+
+
+/*header fr 部分*/
+
+#header li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.fore i {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(//127.0.0.1:8000/static/images/index/header/3.png);
+    position: absolute;
+    top: 5px;
+    left: -3px;
+}
+
+#li-myjd .dorpdown-layer {
+    width: 270px;
+}
+
+#li-myjd .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.user-info {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.u-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.u-pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.otherlist {
+    width: 255px;
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+#li-myjd .fore1,
+#li-myjd .fore2 {
+    float: left;
+    width: 126px;
+}
+
+.viewlist {
+    width: 240px;
+    padding: 0 15px 10px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+}
+
+.smt h4 {
+    float: left;
+}
+
+.smt .extra {
+    float: right;
+}
+
+.viewlist .item {
+    float: left;
+    padding: 4px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.viewlist .item img {
+    width: 50px;
+    height: 50px;
+}
+
+#li-apps .dorpdown-layer {
+    width: 250px;
+}
+
+#li-apps .dt {
+    padding-left: 15px;
+}
+
+#li-apps .dd-spacer {
+    width: 99px;
+    left: 0;
+}
+
+.apps-main {
+    position: relative;
+    width: 250px;
+    height: 195px;
+    overflow: hidden;
+    background: url(//127.0.0.1:8000/static/images/index/header/apps.png);
+}
+
+#li-atte .dorpdown-layer {
+    width: 84px;
+}
+
+#li-atte .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+#li-serv .dorpdown-layer {
+    width: 170px;
+}
+
+#li-serv .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.item-client {
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.serv-item {
+    display: inline-block;
+    width: 65px;
+    padding-left: 15px;
+}
+
+.item-bus {
+    border-top: 1px dotted #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#li-navs .dorpdown-layer {
+    width: 1210px;
+    right: -1px;
+    padding: 20px 0 16px;
+}
+
+#li-navs .dd-spacer {
+    width: 84px;
+    right: 0;
+}
+
+#li-navs dl {
+    float: left;
+    width: 260px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+#li-navs .fore1 {
+    width: 347px;
+    border-left: none;
+}
+
+#li-navs dt {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#li-navs .navs-item {
+    width: 75px;
+    float: left;
+}
+</style>
+
+<div id="header">
+        <div class="w">
+            <ul class="fl">
+                <li class="dorpdown dd" id="li-sendcity">
+                    <div class="dt">
+                        送至：<span>北京</span>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="item"><a class="selected" href="#">功能未做</a></div>
+                        <div class="item"><a href="#">这个</a></div>
+                        <div class="item"><a href="#">需要前端</a></div>
+                        <div class="item"><a href="#">来做这些</a></div>
+                        <div class="item"><a href="#">功能</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                        <div class="item"><a href="#">功能未做</a></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="fr">
+                {% if not request.user.is_authenticated %}
+                <li class="login">
+                    <a href="{% url 'user:login' %}">你好，请登录</a>&nbsp;&nbsp;<a class="style-red" href="{% url 'user:register' %}">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                {% endif %}
+                <li class="fore">
+                    <div class="dt"><a href="#">我的订单</a></div>
+                </li>
+                <li class="spacer"></li>
+                {% if request.user.is_authenticated %}
+                <li class="fore1 dorpdown" id="ttbar-login">
+                    <div class="dt cw-icon">
+                        <i class="icon-plus-nickname"></i>
+                        <a class="nickname" target="_blank" href="{% url 'user:myJD' request.user.id %}">jd_188290iuv</a>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="userinfo">
+                            <div class="u-pic"><a target="_blank" href="https://home.jd.com/"><img src="./我的京东_files/no-img_mid_.jpg" width="60" height="60"></a></div>
+                            <div class="u-plus"><a href="https://passport.jd.com/uc/login?ltype=logout" class="link-logout">退出</a><a href="https://plus.jd.com/index" target="_blank" class="icon-plus-dropdown"></a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                    {% else %}
+
+                    <li class="fore dorpdown dd" id="li-myjd">
+                    <div class="dt">
+                        <a href="#">我的京东</a><span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="user-info">
+                            <div class="u-pic">
+                                <a href="#"><img src="{% static "images/index/header/upic.jpg" %}" alt=""></a>
+                            </div>
+                            <div class="u-name">
+                                <a href="#">你好，请登录</a>
+                            </div>
+                            <div class="u-extra">
+                                <a href="#">优惠券</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                <a href="#">消息</a>
+                            </div>
+                        </div>
+                        <div class="otherlist">
+                            <div class="fore1">
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                            </div>
+                            <div class="fore2">
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                                <div class="item"><a href="#">功能未做</a></div>
+                            </div>
+                        </div>
+                        <div class="viewlist">
+                            <div class="smt">
+                                <h4>最近浏览</h4>
+                                <span class="extra">
+									<a href="#">更多&nbsp;></a>
+								</span>
+                            </div>
+                            <div class="smc">
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="{% static "images/index/header/smc1.jpg" %}" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="{% static "images/index/header/smc2.jpg" %}" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="{% static "images/index/header/smc3.jpg" %}" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="{% static "images/index/header/smc4.jpg" %}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                {% endif %}
+                <li class="fore">
+                    <div class="dt"><a href="#">京东会员</a></div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore">
+                    <div class="dt"><a href="#">企业采购</a></div>
+                </li>
+                <li class="spacer"></li>
+                <li id="li-apps" class="fore dorpdown dd">
+                    <div class="dt">
+                        <i></i>
+                        <a class="mobile-jd" href="#">手机京东</a><span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="apps-main">
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore dorpdown dd" id="li-atte">
+                    <div class="dt">
+                        <a href="#">关注京东</a><span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="atte-main"><img src="//127.0.0.1:8000/static/images/index/header/atte1.jpg" alt=""></div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore dorpdown dd" id="li-serv">
+                    <div class="dt">
+                        <a href="#">客户服务</a><span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="item-client">客户</div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                        <div class="item-bus">商户</div>
+                        <div class="serv-item"><a href="#">功能未做</a></div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore dorpdown" id="li-navs">
+                    <div class="dt">
+                        <a href="#">网站导航</a><span class="icon"></span>
+                    </div>
+                    <div class="dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <dl class="fore1">
+                            <dt>特色主题</dt>
+                            <dd>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="fore2">
+                            <dt>特色主题</dt>
+                            <dd>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="fore3">
+                            <dt>特色主题</dt>
+                            <dd>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="fore4">
+                            <dt>特色主题</dt>
+                            <dd>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                                <div class="navs-item">
+                                    <a href="#">功能未做</a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <span class="clr"></span>
+        </div>
+    </div>

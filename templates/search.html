@@ -1,0 +1,705 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1耳机 - 商品搜索 - 京东</title>
+		<link rel="icon" href="{% static "img/favicon.ico" %}" />
+		<link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static "css/search.css" %}"/>
+	</head>
+	<body>
+		<!--顶部导航栏-->
+		<div id="topLink">
+			<div class="tl_top">
+				<ul>
+					<li class="lt_1" style="float: left;">
+						<a>送至：广东</a>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>									
+					<li class="lt_1">
+						<a class="font_c" href="#">网站导航</a>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+					<p class="sp"></p>					
+					<li class="lt_1">
+						<a class="font_c" href="#">客户服务</a>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+					<p class="sp"></p>					
+					<li class="lt_1">
+						<a class="font_c" href="#">关注京东</a>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+					<p class="sp"></p>
+					<li class="lt_1">
+						<img class="phone" src="{% static "img/phone.png" %}"></img>
+						<a class="font_c" href="#">手机京东</a>						
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+					<p class="sp"></p>				
+					<li class="lt_2">
+						<a class="font_c" href="#">企业采购</a>
+					</li>
+					<p class="sp"></p>				
+					<li class="lt_2">
+						<a class="font_c" href="#">京东会员</a>
+					</li>
+					<p class="sp"></p>					
+					<li class="lt_1">
+						<a class="font_c" href="#">我的京东</a>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+					<p class="sp"></p>					
+					<li class="lt_2">
+						<a class="font_c" href="#">我的订单</a>
+					</li>
+					<li class="lt_1">
+						<a class="font_c" href="#">zengjielin</a>
+						<img class="plus"></img>
+						<img src="{% static "img/toplink.png" %}" style="position: relative;top: 2px;"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部导航栏END-->
+		<!--头部搜索-->
+		<div id="search">
+			<div class="content">
+				<div class="logo">
+					<a></a>
+				</div>
+				<div class="seek">
+					<form action="" method="post" style="margin-top: 25px;">
+						<input type="text" placeholder="耳机" class="key1"/>
+						<input type="submit" value="搜索" class="sk_a"/>
+					</form>
+				</div>
+				<div class="hotword">
+					<ul>
+						<li><a href="#" class="hw_a">耳机 头戴式</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">耳机 入耳式</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">电脑耳机</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">蓝牙耳机</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">铁三角</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">耳机 京东自营</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="hw_a">深海赛尔</a></li>
+					</ul>
+				</div>
+				<div class="shopcar">
+					<b></b>
+					<a href="#">我的购物车</a>
+					<span>3</span>
+					<img src="{% static "img/right_arrows.png" %}" />
+				</div>
+			</div>
+		</div>
+				
+		<!--头部搜索END-->
+		<!--导航栏-全部商品分类-->
+		<div id="bars">
+			<div class="content">
+				<ul>
+					<li style="width: 190px;background-color: #B1191A;color: #FFF;padding: 0 10px;cursor: pointer;">
+						<span>全部商品分类</span>
+						<img src="{% static "img/under.png" %}" style="float: right;position: relative;top: 15px;"/>
+					</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">服装城</a></li>
+					<li><a href="#">美妆馆</a></li>
+					<li><a href="#">京东超市</a></li>
+					<li><a href="#">生鲜</a></li>
+					<li><a href="#">全球购</a></li>
+					<li><a href="#">闪购</a></li>
+					<li><a href="#">拍卖</a></li>
+					<li><a href="#">金融</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-全部商品分类 END-->
+		
+		<!-- 全部结果-->
+		<div id="result">
+			<div class="content">
+				<div class="all_rs">
+					<p><a href="#">全部结果</a><span>></span><b>"耳机"</b></p>
+				</div>
+				<div class="all_rc"><img src="{% static "img/all_rc.jpg" %}"/></div>
+				<div class="chose">
+					<div class="case1" style="height: 119px;">
+						<div class="key">
+							<b>品牌</b>
+						</div>
+						<div class="value">
+							<div class="keyword">
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword.jpg" %}" 	/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword2.jpg" %}"/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword3.jpg" %}"/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword4.jpg" %}"/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword5.jpg" %}"/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword6.jpg" %}"/></a>
+								<a href="#" style="border-right: none;"><img src="{% static "img/keyword7.jpg" %}"/></a>
+								<a href="#"><img src="{% static "img/keyword8.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword8.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword7.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword6.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword5.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword4.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword3.jpg" %}"/></a>
+								<a href="#" style="border-right: none;border-top: none";><img src="{% static "img/keyword2.jpg" %}"/></a>
+								<a href="#"style="border-top: none";><img src="{% static "img/keyword.jpg" %}"/></a>
+							</div>							
+							<a class="vl_b" href="#"><b></b>多选</a>
+							<a class="vl_a" href="#">更多<b></b></a>
+						</div>						
+					</div>
+					<div class="case1">
+						<div class="key">
+							<b>分类</b>
+						</div>
+						<div class="value2">
+							<ul>
+								<li><a href="#">耳机/耳麦</a></li>
+								<li><a href="#">手机耳机</a></li>
+								<li><a href="#">游戏耳机</a></li>
+							</ul>							
+						</div>						
+					</div>
+					<div class="case1">
+						<div class="key">
+							<span>佩戴方式：</span>
+						</div>
+						<div class="value2">
+							<ul>								
+								<li><a href="#">入耳式</a></li>
+								<li><a href="#">头戴式</a></li>
+								<li><a href="#">耳塞式</a></li>
+								<li><a href="#">耳挂式</a></li>
+								<li><a href="#">其他</a></li>
+								<li><a href="#">游戏耳麦式</a></li>
+								<li><a href="#">后绕式</a></li>
+								<li><a href="#">后挂式</a></li>
+								<li><a href="#">其他</a></li>
+							</ul>	
+							<a class="vl_b" href="#"><b></b>多选</a>
+						</div>						
+					</div>
+					<div class="case1">
+						<div class="key">
+							<span>功能用途：</span>
+						</div>
+						<div class="value2">
+							<ul>								
+								<li><a href="#">音乐耳机</a></li>
+								<li><a href="#">专业游戏</a></li>
+								<li><a href="#">手机耳机</a></li>
+								<li><a href="#">蓝牙耳机</a></li>
+								<li><a href="#">运动耳机</a></li>
+								<li><a href="#">其他</a></li>
+								<li><a href="#">电脑耳麦</a></li>
+								<li><a href="#">旅行减噪</a></li>
+								<li><a href="#">专业定制</a></li>
+								<li><a href="#">电视耳机</a></li>		
+							</ul>	
+							<a class="vl_b" href="#"><b></b>多选</a>
+						</div>						
+					</div>
+					<div class="case1" style="border-bottom: 1px solid #DDDDDD;">
+						<div class="key">
+							<span>高级选项：</span>
+						</div>
+						<div class="value3">
+							<a href="#"><span>连接类型</span><b></b></a>
+							<a href="#">使用手机品牌<b></b></a>
+							<a href="#">线控类别<b></b></a>
+							<a href="#">大家说<b></b></a>
+							<a href="#">热词<b></b></a>
+							<a href="#">适用<b></b></a>
+							<a href="#">类型<b></b></a>
+							<a href="#">发声原理<b></b></a>
+							<a href="#">其他分类<b></b></a>	
+						</div>						
+					</div>
+				</div>
+				<div class="list">
+					<div class="goods_list">
+						<div class="left">
+							<b>商品精选</b>
+							<div class="case">
+								<img src="{% static "img/leftadment.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">￥49.00</span>
+									<span style="font-size: 12px;">￥48.00</span>
+									<b></b>
+								</div>	
+								<a href="#">入耳式电脑运动游戏线控重低音乐耳麦耳塞苹果/小米/华为通用 手机</a>
+								<p>已有9319人评价</p>
+							</div>
+							<div class="case">
+								<img src="{% static "img/leftadment2.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">￥1999.00</span>						
+								</div>	
+								<a href="#">Bose QuietComfort25有源消噪耳机-黑色 QC25</a>
+								<p>已有4245人评价</p>
+							</div>
+							<div class="case">
+								<img src="{% static "img/leftadment3.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">￥36.00</span>						
+								</div>	
+								<a href="#">阿奇猫 Q1手机耳机入耳式 重低音带麦耳机线 通用型 星空灰</a>
+								<p>已有443人评价</p>
+							</div>
+						</div>
+						<div class="left" style="margin-top: 15px;">
+							<b>精品推荐</b>
+							<div class="case">
+								<img src="{% static "img/leftadment4.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">￥15.00</span>
+								</div>	
+								<p style="margin-top: 10px;">京东红礼盒</p>
+							</div>
+							<div class="case">
+								<img src="{% static "img/leftadment5.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">￥2888.00</span>						
+								</div>	
+								<a href="#">Bose QuietComfort 35 无线耳机-黑色 QC35头戴式蓝牙耳麦 降噪耳机 蓝牙耳</a>
+							</div>
+							<div class="case">
+								<img src="{% static "img/leftadment6.jpg" %}"/>
+								<div class="price">
+									<span style="color: #E4393C;">¥149.00</span>						
+								</div>	
+								<a href="#">小米（MI）小米手环2 智能运动 心率监测 来电提醒 </a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="right">
+						<div class="right_top">
+							<a href="#" class="rt_a">综合<span></span></a>
+							<a href="#" class="rt_a">销量<span></span></a>
+							<a href="#" class="rt_a">评论数<span></span></a>
+							<a href="#" class="rt_a">新品<span></span></a>
+							<a href="#" class="rt_a">价格<span></span></a>
+							<div class="right_top_b">
+								<a class="rt_b"><span></span></a>
+								<a class="rt_b"><span style="height: 15px;"></span></a>
+								<a class="rt_b"><span style="height: 20px;"></span></a>
+								<a class="rt_b"><span style="height: 24px;"></span></a>
+								<a class="rt_b" style="border-right: none;"><span></span></a>
+							</div>
+							<div class="right_top_c">
+								<p>共56.7万件商品</p>								
+								<span>1/100</span>
+								<a style="border-right: 1px solid transparent;"><</a>
+								<a>></a>
+							</div>
+						</div>						
+						<div class="right_center">
+							<span>配送至</span>
+							<p>北京朝阳区三环以内<i></i></p>
+							<form>
+								<input type="checkbox" /><a href="#">京东配送</a>
+								<input type="checkbox" /><a href="#">货到付款</a>
+								<input type="checkbox" /><a href="#">仅显示有货</a>								
+								<input type="button" name="" id="" value="确定"  class="rc_b"/>
+								<input type="text" name="" id="" value="" placeholder="在结果中搜索" class="rc_a"/>
+							</form>
+						</div>
+						<div class="right_bottom">
+							<div class="case">
+								<img src="{% static "img/search.jpg" %}" class="product"/>
+								<div class="price"><b>￥149.00</b></div>
+								<div class="name"><a href="#">小米（MI）小米圈铁耳机 Pro 入耳式男女生通用有线运动音乐降噪耳麦</a></div>
+								<div class="commit">已有<b>1.9万</b>+人评价</div>
+								<div class="shop"><a href="#">小米官方旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search2.jpg" %}" class="product"/>
+								<div class="price"><b>￥1188.00</b></div>
+								<div class="name"><a href="#">Beats X 蓝牙无线 入耳式耳机 运动耳机 手机耳机 带麦可通话 黑色</a></div>
+								<div class="commit">已有<b>3500+</b>+人评价</div>
+								<div class="shop"><a href="#">Beats京东自营旗舰店</a><i></i></div>
+								<div class="ziyin">
+									<img src="{% static "img/jdziying.png" %}"/>
+									<img src="{% static "img/jdjinxuan.png" %}" />
+									<i></i>
+									<b></b>
+								</div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search3.jpg" %}" class="product"/>
+								<div class="price"><b>￥2699.00</b></div>
+								<div class="name"><a href="#">森海塞尔（Sennheiser） IE80 入耳式HiFi耳机 经典旗舰 黑色 	</a></div>
+								<div class="commit">已有<b>1万+</b>+人评价</div>
+								<div class="shop"><a href="#">森海塞尔官方旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case" style="margin-right: 0;">
+								<img src="{% static "img/search4.jpg" %}" class="product"/>
+								<div class="price"><b>￥1188.00</b></div>
+								<div class="name"><a href="#">Beats X 蓝牙无线 入耳式耳机 运动耳机 手机耳机 带麦可通话 灰色</a></div>
+								<div class="commit">已有<b>1.9万</b>+人评价</div>
+								<div class="shop"><a href="#">Beats京东自营旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search5.jpg" %}" class="product"/>
+								<div class="price"><b>￥598.00</b></div>
+								<div class="name"><a href="#">Beats urBeats 入耳式耳机 - 深空灰 手机耳机 三键线控 带麦 MK9W2PA/B </a></div>
+								<div class="commit">已有<b>4万+</b>+人评价</div>
+								<div class="shop"><a href="#">Beats京东自营旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search6.jpg" %}" class="product"/>
+								<div class="price"><b>￥2498.00</b></div>
+								<div class="name"><a href="#">Bose QuietControl 30 无线耳机 QC30耳塞式蓝牙降噪耳麦</a></div>
+								<div class="commit">已有<b>500+</b>+人评价</div>
+								<div class="shop"><a href="#">BOSE旗舰店</a><i></i></div>
+								<div class="ziyin">
+									<img src="{% static "img/jdziying.png" %}"/>
+									<img src="{% static "img/jdjinxuan.png" %}" />
+									<i></i>
+									<b></b>
+								</div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search7.jpg" %}" class="product"/>
+								<div class="price"><b>￥119.00</b></div>
+								<div class="name"><a href="#">酷狗（KUGOU）小酷M1 无线运动蓝牙耳机 磁吸入耳式耳机 超长续航全金属轻小 </a></div>
+								<div class="commit">已有<b>6.9万</b>+人评价</div>
+								<div class="shop"><a href="#">酷狗官方旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case" style="margin-right: 0;">
+								<img src="{% static "img/search8.jpg" %}" class="product"/>
+								<div class="price"><b>￥2888.00</b></div>
+								<div class="name"><a href="#">Bose QuietComfort 35 无线耳机-黑色 QC35头戴式蓝牙耳麦 降噪耳机 蓝牙耳机</a></div>
+								<div class="commit">已有<b>600+</b>+人评价</div>
+								<div class="shop"><a href="#">BOSE旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<!--广告-->
+							<div class="case">
+								<img src="{% static "img/sc_case.jpg" %}" class="product_b"/>
+								<div class="main">
+									<div class="title"><b>Infinity耳机</b></div>
+									<div class="title_b">评论送飞利浦自拍杆</div>
+									<div class="title_c">立即抢购</div>
+								</div>
+							</div>
+							<!--广告end-->
+							<div class="case" style="margin-right: 0;">
+								<img src="{% static "img/search4.jpg" %}" class="product"/>
+								<div class="price"><b>￥1188.00</b></div>
+								<div class="name"><a href="#">Beats X 蓝牙无线 入耳式耳机 运动耳机 手机耳机 带麦可通话 灰色</a></div>
+								<div class="commit">已有<b>1.9万</b>+人评价</div>
+								<div class="shop"><a href="#">Beats京东自营旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search5.jpg" %}" class="product"/>
+								<div class="price"><b>￥598.00</b></div>
+								<div class="name"><a href="#">Beats urBeats 入耳式耳机 - 深空灰 手机耳机 三键线控 带麦 MK9W2PA/B </a></div>
+								<div class="commit">已有<b>4万+</b>+人评价</div>
+								<div class="shop"><a href="#">Beats京东自营旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search.jpg" %}" class="product"/>
+								<div class="price"><b>￥149.00</b></div>
+								<div class="name"><a href="#">小米（MI）小米圈铁耳机 Pro 入耳式男女生通用有线运动音乐降噪耳麦</a></div>
+								<div class="commit">已有<b>1.9万</b>+人评价</div>
+								<div class="shop"><a href="#">小米官方旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search6.jpg" %}" class="product"/>
+								<div class="price"><b>￥2498.00</b></div>
+								<div class="name"><a href="#">Bose QuietControl 30 无线耳机 QC30耳塞式蓝牙降噪耳麦</a></div>
+								<div class="commit">已有<b>500+</b>+人评价</div>
+								<div class="shop"><a href="#">BOSE旗舰店</a><i></i></div>
+								<div class="ziyin">
+									<img src="{% static "img/jdziying.png" %}"/>
+									<img src="{% static "img/jdjinxuan.png" %}" />
+									<i></i>
+									<b></b>
+								</div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case">
+								<img src="{% static "img/search7.jpg" %}" class="product"/>
+								<div class="price"><b>￥119.00</b></div>
+								<div class="name"><a href="#">酷狗（KUGOU）小酷M1 无线运动蓝牙耳机 磁吸入耳式耳机 超长续航全金属轻小 </a></div>
+								<div class="commit">已有<b>6.9万</b>+人评价</div>
+								<div class="shop"><a href="#">酷狗官方旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<div class="case" style="margin-right: 0;">
+								<img src="{% static "img/search8.jpg" %}" class="product"/>
+								<div class="price"><b>￥2888.00</b></div>
+								<div class="name"><a href="#">Bose QuietComfort 35 无线耳机-黑色 QC35头戴式蓝牙耳麦 降噪耳机 蓝牙耳机</a></div>
+								<div class="commit">已有<b>600+</b>+人评价</div>
+								<div class="shop"><a href="#">BOSE旗舰店</a><i></i></div>
+								<div class="ziyin"><img src="{% static "img/jdziying.png" %}"/><i></i></div>
+								<div class="operate">
+									<a href='#' class="opt_a"><i></i>对比</a>
+									<a href='#' class="opt_b"><i></i>关注</a>
+									<a href='#' class="opt_c"><i></i>加入购物车</a>
+								</div>
+							</div>
+							<!--广告-->
+							<div class="case">
+								<img src="{% static "img/sc_case2.jpg" %}" class="product_b"/>
+								<div class="main">
+									<div class="title"><b>惊爆组合 一战成神</b></div>
+									<div class="title_b">电竞搭档 你买我送</div>
+									<div class="title_c">立即抢购</div>
+								</div>
+							</div>
+							<div class="ui-page">		
+								<a href="#">上一页</a>
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<span>...</span>
+								<a href="#">下一页</a>
+							</div>
+							<!--广告end-->
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<!-- 全部结果END-->
+		<div id="end">
+			<div class="end_content">
+				<div class="ec_top">
+					<div class="ec1">
+						<ul>
+							<li>
+								<img src="{% static "img/ed1.png" %}" />
+								<b>品类齐全，轻松购物</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed2.png" %}" />
+								<b>多仓直发，急速配送</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed3.png" %}" />
+								<b>正品行货，精致服务</b>
+							</li>
+								<li>
+								<img src="{% static "img/ed4.png" %}" />
+								<b>天天低价，畅选无忧</b>
+							</li>
+						</ul>
+					</div>
+					<p class="top_line"></p>
+				</div>
+				
+				<div class="ec_ct">
+					<ul>
+						<li><b style="font-size: 14px;">购物指南</b></li>
+						<li><a href="#" class="et1">购物流程</a></li>
+						<li><a href="#" class="et1">会员介绍</a></li>
+						<li><a href="#" class="et1">生活旅行</a></li>
+						<li><a href="#" class="et1">常见问题</a></li>
+						<li><a href="#" class="et1">大家电</a></li>
+						<li><a href="#" class="et1">联系客服</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">配送方式</b></li>
+						<li><a href="#" class="et1">上门自提</a></li>
+						<li><a href="#" class="et1">211限时达</a></li>
+						<li><a href="#" class="et1">配送服务查询</a></li>
+						<li><a href="#" class="et1">配送费收取标准</a></li>
+						<li><a href="#" class="et1">海外配送</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">支付方式</b></li>
+						<li><a href="#" class="et1">在线支付</a></li>
+						<li><a href="#" class="et1">货到付款</a></li>
+						<li><a href="#" class="et1">分期付款</a></li>
+						<li><a href="#" class="et1">邮局汇款</a></li>
+						<li><a href="#" class="et1">公司转账</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">售后服务</b></li>
+						<li><a href="#" class="et1">售后政策</a></li>
+						<li><a href="#" class="et1">价格保护</a></li>
+						<li><a href="#" class="et1">退款说明</a></li>
+						<li><a href="#" class="et1">返修/退换货</a></li>
+						<li><a href="#" class="et1">取消订单</a></li>
+					</ul>
+					<ul>
+						<li><b style="font-size: 14px;">特色服务</b></li>
+						<li><a href="#" class="et1">夺宝岛</a></li>
+						<li><a href="#" class="et1">DIY装机</a></li>
+						<li><a href="#" class="et1">延保服务</a></li>
+						<li><a href="#" class="et1">京东E卡</a></li>
+						<li><a href="#" class="et1">京东通信</a></li>
+						<li><a href="#" class="et1">京东JD+</a></li>
+					</ul>
+					<div class="ec_r">
+						<b style="font-size: 14px;">京东自营覆盖区县</b>
+						<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+						<p style="float: right;"><a href="#" class="et1">查看详情></a></p>
+					</div>
+				
+				</div>
+				<p class="top_line"></p>
+				<div class="ec_link">
+					<ul>
+						<li><a href="#" class="ecl1">关于我们</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">联系我们</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">联系客服</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">合作招商</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">营销中心</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">手机京东</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">友情链接</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">销售联盟</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">京东社区</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">风险监测</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">隐私政策</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">京东公益</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">English Site</a></li>
+						<li class="sp"></li>
+						<li><a href="#" class="ecl1">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="ec_b"">
+					<p>
+						<a href="#" class="eb1">京公网安备 11000002000088号</a>
+						<span class="sp"></span>
+						<a class="eb1">京ICP证070359号</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+						<span class="sp"></span>
+						<a class="eb1">新出发京零 字第大120007号</a>
+					</p>
+					<p>
+						<a class="eb1">互联网出版许可证编号新出网证(京)字150号</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">出版物经营许可证</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">网络文化经营许可证京网文[2014]2148-348号</a>
+						<span class="sp"></span>
+						<a  class="eb1">违法和不良信息举报电话：4006561155</a>
+					</p>
+					<p>
+						<a  class="eb1">Copyright © 2004 - 2017  京东JD.com 版权所有</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">消费者维权热线：4006067733经营证照</a>
+					</p>
+					<p>
+						<a class="eb1">京东旗下网站：</a>
+						<a href="#" class="eb1">京东钱包</a>
+						<span class="sp"></span>
+						<a href="#" class="eb1">京东云</a>
+					</p>
+					<p>
+						<img src="{% static "img/end1.png" %}"/>
+						<img src="{% static "img/end2.png" %}"/>
+						<img src="{% static "img/end3.png" %}"/>
+						<img src="{% static "img/end4.png" %}"/>
+						<img src="{% static "img/end5.png" %}"/>
+						<img src="{% static "img/end6.png" %}"/>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--结尾END-->
+	</body>
+</html>

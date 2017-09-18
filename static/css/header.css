@@ -1,0 +1,383 @@
+/*header start*/
+
+.w {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.dorpdown-spacer {
+    position: absolute;
+    background: #fff;
+    top: -1px;
+    z-index: 30;
+}
+
+.hide {
+    display: none;
+}
+
+.m,
+.sm {
+    margin-bottom: 10px;
+}
+
+#header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #f1f1f1;
+}
+
+#header li {
+    float: left;
+    height: 30px;
+    padding: 0 2px;
+    position: relative;
+}
+
+#header li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+#header .dt {
+    position: relative;
+    float: left;
+    padding: 0 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#header dd {
+    line-height: 24px;
+}
+
+#header .h-dorpdown-area {
+    padding-left: 10px;
+}
+
+#header .dorpdown-layer {
+    line-height: 24px;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    z-index: 20;
+    opacity: 1;
+}
+
+#header .dorpdown-spacer {
+    position: absolute;
+    background: #fff;
+    top: -1px;
+    z-index: 30;
+}
+
+#h-dorpdown .dorpdown-spacer {
+    left: 1px;
+    top: -1px;
+    width: 95px;
+    height: 4px;
+    background: #fff;
+}
+
+#header .layer-content {
+    width: 301px;
+    height: 224px;
+    padding: 10px;
+    padding-right: 0;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+}
+
+#header .layer-list {}
+
+#header .layer-list .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#header .layer-list .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#header .layer-list .item a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+#h-dorpdown:hover .h-dorpdown-area {
+    border: solid #ddd;
+    border-width: 0 1px;
+}
+
+#header .icon-right {
+    padding-right: 25px;
+}
+
+#header .icon-center {
+    padding: 0 25px;
+}
+
+#header .ci-left {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    width: 23px;
+    height: 20px;
+    background: url(../images/fashion/jd2015img.png) no-repeat 0 0;
+}
+
+#header .ci-right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 23px;
+    height: 14px;
+    background: url(../images/fashion/header/arrowTop.png) no-repeat 2px -5px;
+}
+
+#login {
+    margin-right: 10px;
+}
+
+#ttbar-myjd .dorpdown-layer {
+    left: 1px;
+    top: 30px;
+    width: 270px;
+    border: 1px solid #ddd;
+    z-index: 20;
+}
+
+#ttbar-myjd .dorpdown-spacer {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    background: #fff;
+    height: 4px;
+    width: 81px;
+}
+
+#ttbar-myjd .u-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+#ttbar-myjd .u-pic img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#ttbar-myjd .u-name {
+    padding: 6px 0 0;
+    font-weight: 700;
+}
+
+#ttbar-myjd .otherlist {
+    width: 255px;
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#ttbar-myjd .otherlist .fore1,
+#ttbar-myjd .otherlist .fore2 {
+    float: left;
+    width: 126px;
+}
+
+#ttbar-myjd .viewlist {
+    width: 240px;
+    padding: 0 15px 10px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+}
+
+#ttbar-myjd .viewlist .smt h4 {
+    float: left;
+}
+
+#ttbar-myjd .viewlist .smt .extra {
+    float: right;
+}
+
+#ttbar-myjd .userinfo {
+    padding: 10px 15px;
+}
+
+#ttbar-apps .dorpdown-layer {
+    left: 1px;
+    border: 1px solid #ddd;
+}
+
+#ttbar-apps .dorpdown-spacer {
+    left: 0;
+    width: 98px;
+    height: 4px;
+}
+
+#ttbar-apps .dd-inner {
+    position: relative;
+    width: 250px;
+    height: 195px;
+    overflow: hidden;
+}
+
+#ttbar-apps .dd .link1,
+#ttbar-apps .dd .link2,
+#ttbar-apps .dd .link3 {
+    left: 92px;
+    top: 6px;
+    background-position: 0 -44px;
+}
+
+#ttbar-apps .dd .link {
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#ttbar-apps .dd a {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 44px;
+    overflow: hidden;
+    text-indent: -500px;
+}
+
+#ttbar-atte .dd,
+#ttbar-serv .dd {
+    width: 81px;
+    padding-bottom: 8px;
+}
+
+#ttbar-atte .dorpdown-layer {
+    left: 1px;
+    border: 1px solid #ddd;
+}
+
+#ttbar-atte .dorpdown-spacer {
+    left: 0;
+    width: 81px;
+    height: 4px;
+}
+
+#ttbar-atte .dorpdown-layer img {
+    width: 81px;
+    height: 97px;
+}
+
+#ttbar-serv .dd {
+    width: 170px;
+}
+
+#ttbar-serv .item-business,
+#ttbar-serv .item-client {
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#ttbar-atte .item,
+#ttbar-serv .item {
+    display: inline-block;
+    width: 68px;
+    padding-left: 15px;
+}
+
+#ttbar-serv .dorpdown-layer {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+#ttbar-serv .dorpdown-spacer {
+    left: 0;
+    width: 81px;
+    height: 4px;
+}
+
+#ttbar-serv .item-business {
+    border-top: 1px dotted #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+#ttbar-navs .dd {
+    width: 1210px;
+    right: 1px;
+    padding: 20px 0 16px;
+}
+
+#ttbar-navs .dorpdown-layer {
+    border: 1px solid #ddd;
+}
+
+#ttbar-navs .dorpdown-spacer {
+    right: 0;
+    width: 81px;
+    height: 4px;
+}
+
+#ttbar-navs dl {
+    float: left;
+    width: 201px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+#ttbar-navs dl.fore1 {
+    border-left: none;
+    width: 347px;
+}
+
+#ttbar-navs dl.fore2,
+#ttbar-navs dl.fore3,
+#ttbar-navs dl.fore4 {
+    width: 259px;
+}
+
+#ttbar-navs dt {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#ttbar-navs .item {
+    float: left;
+    width: 86px;
+}
+
+#header li.dorpdown:hover i.ci-left {
+    background: url(../images/fashion/jd2015img.png) no-repeat 0 -25px;
+}
+
+#header li.dorpdown:hover i.ci-right {
+    background: url(../images/fashion/header/arrowBottom.png) no-repeat 3px -5px;
+}
+
+#header li.dorpdown:hover .dt {
+    border: solid #ddd;
+    border-width: 0 1px;
+}
+
+#header li.dorpdown:hover {
+    background: #fff;
+    padding: 0 1px;
+}
+
+
+/*header end*/

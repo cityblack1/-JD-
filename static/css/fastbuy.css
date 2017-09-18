@@ -1,0 +1,1475 @@
+/*commonality*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+* {
+    font-weight: normal;
+}
+
+.cl {
+    clear: both;
+}
+
+body {
+    position: relative;
+}
+
+
+/*导航重用*/
+
+#nav-con {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav-con ul li {
+    float: left;
+}
+
+#nav-con ul li a {
+    display: block;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-align: center;
+}
+
+
+/*购物车*/
+
+#shopcar a {
+    width: 113px;
+    height: 29px;
+}
+
+#shopcar em {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 23px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#shopcar p {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 4px;
+}
+
+#shopcar strong {
+    position: absolute;
+    left: 46px;
+    top: 6px;
+    font-weight: normal;
+}
+
+#shopcar span {
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+
+/*收藏*/
+
+.love-href {
+    display: inline-block;
+    width: 58px;
+    height: 19px;
+}
+
+.love-href span {
+    position: absolute;
+    z-index: 3;
+    width: 58px;
+    height: 19px;
+    opacity: 0.6;
+    background: #000;
+    border-radius: 10px;
+}
+
+.love-href em {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 5;
+    top: 4px;
+    left: 7px;
+    background: url(../images/fastbuy/love.png) no-repeat 0 0;
+}
+
+.love-href p {
+    height: 12px;
+    position: absolute;
+    left: 23px;
+    z-index: 5;
+    color: #fff;
+}
+
+
+/*private*/
+
+
+/*首条*/
+
+#con {
+    background: #f6f6f6;
+}
+
+#navh {
+    height: 30px;
+    border-bottom: #eaeaea solid 1px;
+    background: #f1f1f1;
+}
+
+#navh #contain {
+    width: 1100px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#contain #first {
+    width: 66px;
+    height: 30px;
+    position: relative;
+}
+
+#first p {
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background: url(../images/fastbuy/icon.png) no-repeat 0 0;
+}
+
+#first a {
+    width: 53px;
+    height: 30px;
+    margin-left: 16px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    line-height: 30px;
+}
+
+#contain #first a:hover {
+    color: #f54838;
+}
+
+
+/*欢迎登陆*/
+
+#contain #register {
+    height: 30px;
+    width: 388px;
+}
+
+#register a {
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#contain #register a:hover {
+    color: #f54838;
+}
+
+#register #list li {
+    float: left;
+}
+
+#register #list li a {
+    width: 48px;
+    height: 30px;
+    line-height: 30px;
+    color: #777;
+}
+
+#register #list li a:hover {
+    color: #f54838;
+}
+
+#register #list li span {
+    margin: 7px 10px;
+    color: #d7d7d7;
+}
+
+#register #fastbuy {
+    width: 96px;
+    height: 30px;
+    margin-left: -8px;
+    position: relative;
+    z-index: 6;
+}
+
+#register #fastbuy p {
+    float: left;
+    width: 13px;
+    height: 22px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    background: url(../images/fastbuy/pone.png) no-repeat 0 0;
+}
+
+#register #fastbuy a {
+    float: left;
+    width: 48px;
+    height: 30px;
+    position: absolute;
+    left: 26px;
+    line-height: 30px;
+    color: #777;
+}
+
+#register #fastbuy a:hover {
+    color: #cc0004;
+}
+
+#register #fastbuy span {
+    float: right;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    background: url(../images/fastbuy/pone.png) no-repeat right -7px;
+}
+
+.quter {
+    display: none;
+    width: 244px;
+    height: 153px;
+    border: solid 1px #eaeaea;
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    right: 124px;
+    background: #fff;
+}
+
+#register .quter .quterimg {
+    width: 264px;
+    height: 114px;
+}
+
+.quter .quter-img .img1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 4px;
+    border-right: dotted 1px #e1e1e1;
+}
+
+.quter .quter-img .img2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px 13px 4px 10px;
+}
+
+.quter .quter-img img {
+    width: 100px;
+    height: 100px;
+}
+
+#register .quter .big-img1 {
+    width: 220px;
+    height: 34px;
+    margin-left: 10px;
+}
+
+
+/*头部*/
+
+#head {
+    height: 100px;
+    background: #fff;
+}
+
+#header {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#header #logo {
+    margin-right: 20px;
+}
+
+#header #serve {
+    margin-left: 175px;
+}
+
+#header #serve ul li {
+    float: left;
+}
+
+#header #serve ul li a {
+    width: 142px;
+    height: 100px;
+    float: left;
+}
+
+#header #serve ul .serve1 a {
+    background: url(../images/fastbuy/modsn.jpg) no-repeat 0 0;
+}
+
+#header #serve ul .serve2 a {
+    background: url(../images/fastbuy/modsn.jpg) no-repeat -142px 0;
+}
+
+#header #serve ul .serve3 a {
+    background: url(../images/fastbuy/modsn.jpg) no-repeat -284px 0;
+}
+
+
+/*购物车*/
+
+#header #shopcar a {
+    border: solid 1px #ddd;
+    position: relative;
+    margin-top: 34px;
+    background: #f8f8f8;
+}
+
+#header #shopcar a:hover {
+    width: 113px;
+    height: 29px;
+    border: solid 1px #f77d73;
+}
+
+#header #shopcar em {
+    color: #edffff;
+}
+
+#header #shopcar p {
+    background: url(../images/fastbuy/icon.png) no-repeat 0 -18px;
+}
+
+#header #shopcar strong {
+    color: #000;
+}
+
+#header #shopcar span {
+    background: url(../images/fastbuy/icon.png) no-repeat -27px 0;
+}
+
+
+/*公共*/
+
+
+/*浮动导航条*/
+
+#nav-float {
+    height: 37px;
+    border-bottom: solid 1px #d1d1d1;
+    background: #f0f0f0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: none;
+}
+
+#nav-float #nav-con b {
+    display: block;
+    width: 87px;
+    height: 37px;
+    background: url(../images/fastbuy/icon.png) no-repeat -200px 0;
+    box-shadow: 1px 1px 0px #afacad;
+}
+
+#nav-float #nav-con ul {
+    margin-left: 107px;
+    position: absolute;
+}
+
+#nav-float #nav-con ul li a {
+    width: 114px;
+    height: 37px;
+    line-height: 37px;
+    font-weight: bolder;
+    color: #000;
+}
+
+#nav-float #nav-con ul .activ a {
+    border-bottom: solid 2px #cb111b;
+    color: #cb111b;
+}
+
+#nav-float #nav-con ul li a:hover {
+    color: #cb111b;
+}
+
+#nav-float #shopcar a {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background: #cb111b;
+}
+
+#nav-float #shopcar em {
+    color: #cb111b;
+}
+
+#nav-float #shopcar p {
+    background: url(../images/fastbuy/icon.png) no-repeat -21px -18px;
+}
+
+#nav-float #shopcar strong {
+    color: #fff;
+}
+
+#nav-float #shopcar span {
+    background: url(../images/fastbuy/icon.png) no-repeat -35px 0;
+}
+
+
+/*导航条*/
+
+#banner #nav {
+    height: 35px;
+    border-bottom: solid 1px #a60511;
+    background: #cb111b;
+}
+
+#banner #nav ul {
+    position: absolute;
+    left: 0;
+}
+
+#banner #nav ul li a {
+    width: 112px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+}
+
+#banner #nav ul .active {
+    background: #b31610;
+}
+
+#banner #nav ul a:hover {
+    background: #bd302a;
+}
+
+
+/*广告*/
+
+#banner #ad {
+    height: 385px;
+    width: 100%;
+    background: #eee;
+    position: relative;
+}
+
+#banner #ad img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#main {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#mainnew {
+    clear: both;
+    background: #f6f6f6;
+}
+
+#mainnew .mleft {
+    width: 686px;
+}
+
+.mleft .mleft-title {
+    width: 686px;
+    height: 66px;
+}
+
+.mleft .mynew {
+    margin-top: 20px;
+}
+
+.mleft .mleft-pro {
+    position: relative;
+    width: 686px;
+    height: 190px;
+    border: solid 1px #dbdbdb;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 1px #dbdbdb;
+}
+
+.mleft-pro .m-m-pro {
+    width: 206px;
+    height: 190px;
+    background: #fff;
+}
+
+.mleft-pro .m-m-pro .mark {
+    width: 206px;
+    height: 110px;
+    border-bottom: dotted 1px #eee;
+}
+
+.mleft-pro .m-m-pro .mark .pro-mark {
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 27px;
+}
+
+.mleft-pro .m-m-pro .mark .pro-href {
+    width: 150px;
+    height: 23px;
+    position: absolute;
+    left: 27px;
+    top: 56px;
+    line-height: 23px;
+    text-align: center;
+    color: #484848;
+}
+
+.mleft-pro .m-m-pro .mark a:hover {
+    text-decoration: underline;
+}
+
+.mleft-pro .m-m-pro .mark .pro-intro {
+    width: 150px;
+    height: 21px;
+    position: absolute;
+    top: 79px;
+    left: 27px;
+    line-height: 21px;
+    text-align: center;
+    color: #b30004;
+}
+
+.mleft-pro .m-m-pro .price {
+    width: 206px;
+    height: 78px;
+}
+
+.mleft-pro .m-m-pro .price .pro-price {
+    width: 206px;
+    height: 29px;
+    margin-top: 16px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.mleft-pro .m-m-pro .price .pro-price strong {
+    font-size: 18px;
+    color: #b30004;
+}
+
+.mleft-pro .m-m-pro .price .time {
+    width: 206px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+}
+
+.mleft-pro .m-m-pro .price .time b {
+    display: block;
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    top: 163px;
+    left: 34px;
+    background: url(../images/fastbuy/icon.png) no-repeat -138px 0;
+}
+
+.mleft-pro .m-m-pro .price .time p {
+    margin-left: 30px;
+}
+
+.mleft .m-l-pro .product {
+    width: 480px;
+    height: 190px;
+}
+
+.m-l-pro .product .pro-href {
+    display: inline-block;
+    width: 480px;
+    height: 190px;
+}
+
+.m-l-pro .product .love-href span {
+    top: 10px;
+    left: 216px;
+}
+
+.m-l-pro .product .pro-href img {
+    width: 480px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    left: 206px;
+}
+
+.m-l-pro .product .self img {
+    width: 52px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 14px;
+}
+
+.m-l-pro .product .jian {
+    background: url(../images/fastbuy/main-new-ad/20150731003.png) repeat-X;
+    width: 480px;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 10px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mleft-pro1 {
+    width: 686px;
+    height: 190px;
+    margin-bottom: 20px;
+}
+
+.mleft-pro1 a .big-pic {
+    width: 686px;
+    height: 190px;
+}
+
+.mright {
+    width: 295px;
+    margin-left: 16px;
+    position: relative;
+}
+
+.big-img {
+    width: 275px;
+    height: 275px;
+    border: solid 10px #fff;
+}
+
+.big-img img {
+    width: 275px;
+    height: 275px;
+}
+
+.mright .big-img {
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+
+.tuijian {
+    position: relative;
+}
+
+.tuijian .tui-title {
+    width: 295px;
+    height: 60px;
+    position: relative;
+    top: 2945px;
+}
+
+.tuijian .tui-title p {
+    width: 295px;
+    height: 2px;
+    background: #bebebe;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+
+.tuijian .tui-title span {
+    display: block;
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: url(../images/fastbuy/side-ad/bg_repeat.png) repeat;
+    position: absolute;
+    z-index: 2;
+    top: 18px;
+    left: 98px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #714a1f;
+}
+
+.tuijian .big-img {
+    position: absolute;
+    top: 3005px;
+}
+
+.mright .new {
+    width: 295px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    color: #666;
+    position: absolute;
+    top: 327px;
+}
+
+.mright .mr-title {
+    width: 295px;
+    height: 38px;
+    border: solid 1px #e1e1e1;
+    background: #fff;
+    position: absolute;
+    top: 386px;
+}
+
+.mright .mr-title li {
+    float: left;
+    width: 98px;
+    height: 38px;
+    background: url(../images/fastbuy/2014071104.png) no-repeat right 10px;
+    cursor: pointer;
+}
+
+.mright .mr-title .active {
+    width: 100px;
+    height: 38px;
+    margin-left: -1px;
+    background: #c81623;
+}
+
+.mright .mr-title .active .time p {
+    color: #fff;
+}
+
+.mright .mr-title .no-bg {
+    background: none;
+}
+
+.mright .mr-title li .time {
+    width: 98px;
+    height: 34px;
+    padding-top: 4px;
+}
+
+.mright .mr-title li .time p {
+    width: 98px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: #bbb;
+}
+
+.mright .mr-title .active span {
+    display: block;
+    width: 11px;
+    height: 6px;
+    margin-left: 45px;
+    background: url(../images/fastbuy/side-ad/20150803001.png)no-repeat;
+}
+
+.mright .mr-pro {
+    width: 295px;
+    position: absolute;
+    top: 436px;
+    border: solid 1px #e1e1e1;
+}
+
+.mright .mr-pro .mr-proa {
+    display: block;
+    width: 295px;
+}
+
+.mright .mr-pro .mr-prob,
+.mright .mr-pro .mr-proc {
+    display: none;
+    width: 295px;
+}
+
+.mr-pro .mr-pro-title {
+    width: 295px;
+    height: 33px;
+    border-bottom: solid 1px #e1e1e1;
+    line-height: 33px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.mr-pro #title1 {
+    border-top: solid 1px #e1e1e1;
+}
+
+.mr-pro .product {
+    float: left;
+    width: 147px;
+    height: 84px;
+    position: relative;
+}
+
+.mr-pro .product .mr-pro-mark {
+    width: 147px;
+    height: 83px;
+    border-bottom: dotted 1px #e1e1e1;
+    border-left: dotted 1px #e1e1e1;
+    background: #fff;
+}
+
+.mr-pro .proa .mr-pro-mark {
+    border-left: none;
+}
+
+.mr-pro .mr-pro-mark a {
+    display: block;
+    width: 155px;
+    height: 84px;
+    position: relative;
+    right: 10px;
+}
+
+.mr-pro .mr-pro-mark a img {
+    width: 80px;
+    height: 43px;
+    margin: 20px 29px;
+}
+
+.mr-pro .product .pro-float {
+    display: none;
+    width: 337px;
+    height: 212px;
+    border: solid 1px #e1e1e1;
+    position: relative;
+    z-index: 8;
+    top: -84px;
+    left: -348px;
+    background: #fff;
+}
+
+.pro-float .pro-bg {
+    width: 9px;
+    height: 18px;
+    position: absolute;
+    right: -9px;
+    top: 16px;
+    background: url(../images/fastbuy/side-ad/jiao.png)no-repeat;
+}
+
+.pro-float .active-pro-phone {
+    display: none;
+    width: 337px;
+    height: 46px;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    border-top: none;
+    padding-top: 2px;
+    position: absolute;
+    top: 212px;
+    right: -1px;
+    z-index: 9;
+}
+
+.product .pro-float .pro-float-img {
+    width: 337px;
+    height: 158px;
+}
+
+.pro-float-img .love-href span {
+    position: absolute;
+    top: 120px;
+    right: 16px;
+}
+
+.pro-float-img a img {
+    display: inline-block;
+    width: 317px;
+    height: 138px;
+    border: solid 10px #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pro-float .pro-intro .intro-href {
+    display: block;
+    width: 195px;
+    height: 22px;
+    padding-top: 6px;
+    line-height: 22px;
+    text-indent: 10px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.pro-float .pro-intro a:hover {
+    text-decoration: underline;
+    color: #e4393c;
+}
+
+.pro-float .pro-intro p {
+    height: 20px;
+    width: 195px;
+    line-height: 20px;
+    text-indent: 10px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #b30004;
+}
+
+.pro-float .pro-intro .pro-mark {
+    width: 120px;
+    height: 30px;
+    border: solid 1px #e1e1e1;
+    position: absolute;
+    top: 168px;
+    left: 195px;
+}
+
+.pro-float .pro-mark .mark-href img {
+    width: 120px;
+    height: 30px;
+}
+
+#mainlast {
+    width: 1000px;
+    margin: 0 auto;
+    background: #f6f6f6;
+}
+
+#mainlast .mainlast-title {
+    height: 44px;
+    margin: 20px 0 30px;
+    text-align: center;
+    position: relative;
+}
+
+#mainlast .mainlast-title span {
+    height: 2px;
+    width: 1000px;
+    background: #cdcdcd;
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+
+#mainlast .mainlast-title h2 {
+    position: absolute;
+    z-index: 2;
+    left: 425px;
+    top: 0px;
+    width: 150px;
+    height: 24px;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    color: #714a1f;
+    background: #f6f6f6;
+}
+
+#mainlast .mainlast-title p {
+    height: 18px;
+    width: 150px;
+    line-height: 18px;
+    color: #999;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    position: absolute;
+    top: 26px;
+    left: 425px;
+}
+
+#mainlast #proa {
+    margin-right: 0;
+}
+
+#mainlast .ml-pro {
+    width: 490px;
+    height: 284px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#mainlast .ml-pro .ml-pro-pic {
+    width: 490px;
+    height: 196px;
+}
+
+.ml-pro-pic .love-href span {
+    position: absolute;
+    top: 168px;
+    right: 10px;
+}
+
+#mainlast .ml-pro .pro-href {
+    width: 490px;
+    height: 196px;
+}
+
+.ml-pro .pro-href img {
+    width: 490px;
+    height: 196px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#mainlast .ml-pro .ml-pro-intro {
+    width: 490px;
+    height: 88px;
+    background: #fff;
+}
+
+.ml-pro-intro .price {
+    height: 26px;
+    width: 306px;
+    padding-top: 12px;
+    line-height: 38px;
+    color: #666;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-indent: 10px;
+}
+
+.ml-pro-intro .price strong {
+    color: #b30004;
+    font-size: 22px;
+    font-family: arial;
+}
+
+.ml-pro-intro .ml-time {
+    display: block;
+    width: 156px;
+    height: 22px;
+    color: #fff;
+    line-height: 22px;
+    background: #a4a4a4;
+    border-radius: 10px;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.ml-pro-intro .ml-time em {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 254px;
+    left: 18px;
+    background: url(../images/fastbuy/time.png) no-repeat;
+}
+
+.ml-pro-intro .ml-time .ltime {
+    margin-left: 21px;
+}
+
+.ml-pro-intro .ml-href {
+    display: block;
+    width: 174px;
+    height: 63px;
+    border: solid 1px #e1e1e1;
+    position: absolute;
+    top: 206px;
+    right: 12px;
+}
+
+.ml-pro-intro .ml-href .ml-mark {
+    width: 150px;
+    height: 35px;
+}
+
+.ml-pro-intro .ml-href img {
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 12px;
+    top: 4px;
+}
+
+.ml-pro-intro .ml-href p {
+    height: 24px;
+    width: 174px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 39px;
+}
+
+.ml-pro-intro a:hover {
+    text-decoration: underline;
+    color: #e5383c;
+}
+
+#mainactive {
+    background: #f6f6f6;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#mainactive .active-title {
+    width: 1000px;
+    height: 48px;
+    margin-top: 30px;
+    border-bottom: solid 2px #bababa;
+}
+
+#mainactive .active-title ul {
+    width: 432px;
+    height: 48px;
+}
+
+#mainactive .active-title ul li {
+    float: left;
+    width: 145px;
+    height: 48px;
+    margin-left: -1px;
+    line-height: 48px;
+    text-align: center;
+    color: #74532d;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    background: url(../images/fastbuy/2014071104.png) no-repeat right 15px;
+    cursor: pointer;
+}
+
+#mainactive .active-title ul .active {
+    width: 145px;
+    height: 50px;
+    color: #fff;
+    background: #74532d;
+}
+
+#mainactive .active-title ul .no-bg {
+    background: none;
+}
+
+#mainactive #active-a,
+#mainactive #active-b,
+#mainactive #active-c {
+    display: none;
+    float: left;
+    width: 1000px;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+#mainactive #active-a {
+    display: block;
+}
+
+#mainactive .pos {
+    clear: both;
+    position: relative;
+}
+
+#mainactive .con {
+    width: 324px;
+    height: 176px;
+    float: left;
+    margin: 20px 14px 0 0;
+}
+
+#mainactive #conn {
+    margin: 20px 0 0;
+}
+
+#mainactive .active-pro {
+    float: left;
+    width: 324px;
+    height: 176px;
+    position: relative;
+}
+
+.active-pro .pro-img {
+    width: 324px;
+    height: 126px;
+}
+
+.active-pro .pro-img .love-href span {
+    position: absolute;
+    top: 100px;
+    left: 258px;
+}
+
+.active-pro .pro-img .pro-href {
+    display: block;
+    width: 324px;
+    height: 126px;
+}
+
+.active-pro .pro-img .pro-href img {
+    width: 324px;
+    height: 126px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active-pro .pro-intro {
+    width: 324px;
+    height: 50px;
+    background: #fff;
+}
+
+.active-pro .pro-intro .intro-href {
+    display: block;
+    width: 192px;
+    height: 18px;
+    padding-top: 10px;
+    line-height: 18px;
+    text-indent: 20px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.active-pro .pro-intro a:hover {
+    text-decoration: underline;
+    color: #e4393c;
+}
+
+.active-pro .pro-intro p {
+    height: 16px;
+    width: 192px;
+    line-height: 16px;
+    text-indent: 20px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #b30004;
+}
+
+.active-pro .pro-intro .pro-mark {
+    width: 120px;
+    height: 30px;
+    border: solid 1px #e1e1e1;
+    position: absolute;
+    top: 136px;
+    left: 192px;
+}
+
+.pro-intro .pro-mark .mark-href {
+    width: 120px;
+    height: 30px;
+}
+
+.pro-intro .pro-mark .mark-href img {
+    width: 120px;
+    height: 30px;
+}
+
+#mainactive .active-pro-phone {
+    float: left;
+    width: 324px;
+    height: 46px;
+    padding-top: 8px;
+    background: #fff;
+    display: none;
+    position: relative;
+    z-index: 9;
+}
+
+.active-pro-phone .phone-text {
+    width: 306px;
+    height: 36px;
+    margin-left: 10px;
+    border-top: dotted 1px #e1e1e1;
+    position: relative;
+}
+
+.active-pro-phone .phone-text .tex {
+    width: 202px;
+    height: 32px;
+    border: solid 1px #72542b;
+    line-height: 32px;
+    text-indent: 5px;
+    color: #a8a8a8;
+    background: #f6f5f5;
+}
+
+.active-pro-phone .phone-text p {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 214px;
+    top: 14px;
+    z-index: 4;
+    background: url(../images/fastbuy/2014071103.png)no-repeat;
+}
+
+.active-pro-phone .phone-text .btn {
+    width: 102px;
+    height: 36px;
+    border: none;
+    position: absolute;
+    left: 204px;
+    top: 0;
+    color: #fff;
+    background: #72542b;
+}
+
+#top {
+    width: 54px;
+    height: 192px;
+    position: fixed;
+    right: 112px;
+    bottom: 100px;
+}
+
+#top ul li {
+    width: 52px;
+    height: 52px;
+    border: solid 1px #e1e1e1;
+    margin-bottom: 1px;
+    background: #74532b;
+}
+
+#top ul li a {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #f6f6f6;
+    margin-top: 8px;
+}
+
+#top .h {
+    display: block;
+    background: #d1d1d1;
+    width: 52px;
+    height: 26px;
+    border: solid 1px #e1e1e1;
+}
+
+#top .h img {
+    width: 53px;
+    height: 26px;
+}
+
+
+/*尾部*/
+
+#foot {
+    height: 259px;
+    background: #fff;
+}
+
+#footer {
+    width: 1100px;
+    height: 259px;
+    margin: 0 auto;
+}
+
+#footer #serves ul {
+    width: 1100px;
+    height: 120px;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+#footer #serves ul li {
+    float: left;
+    width: 221px;
+    height: 80px;
+    margin-top: 30px;
+    background: #ddd;
+}
+
+#footer #serves ul .serves1 {
+    margin-left: 72px;
+    background: url(../images/fastbuy/img-bottom.png) no-repeat -34px 0;
+}
+
+#footer #serves ul .serves2 {
+    background: url(../images/fastbuy/img-bottom.png) no-repeat -448px 0;
+}
+
+#footer #serves ul .serves3 {
+    background: url(../images/fastbuy/img-bottom.png) no-repeat -669px 0;
+}
+
+#footer #serves ul .serves4 {
+    width: 322px;
+    background: url(../images/fastbuy/img-bottom.png) no-repeat -890px 0;
+}
+
+#footer #aboutour {
+    height: 137px;
+}
+
+#footer #aboutour ul {
+    height: 22px;
+    width: 1100px;
+    margin: 21px 0 0 150px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#footer #aboutour ul li {
+    float: left;
+    width: 62px;
+}
+
+#footer #aboutour ul a {
+    width: 47px;
+    color: #888;
+}
+
+#footer #aboutour ul a:hover {
+    text-decoration: underline;
+}
+
+#footer #aboutour ul span {
+    margin: 2px 5px 0 5px;
+    color: #e8dde8;
+}
+
+#footer #aboutour ul .about2 {
+    width: 92px;
+}
+
+#footer #aboutour ul .about2 a {
+    width: 70px;
+}
+
+#footer #aboutour ul .about3 {
+    width: 75px;
+}
+
+#footer #aboutour ul .about3 a {
+    width: 70px;
+}
+
+#footer #aboutour p {
+    width: 1100px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #888;
+}
+
+#footer #aboutour p span {
+    margin: 2px 5px 0 5px;
+    color: #e8dde8;
+}

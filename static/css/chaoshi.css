@@ -1,0 +1,3875 @@
+/*header部分*/
+
+#header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+
+#header .w {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+
+/*header fl 部分*/
+
+#header li {
+    float: left;
+    padding: 0 10px;
+}
+
+.dorpdown {
+    margin: 0 1px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+#li-sendcity,
+#li-navs {
+    margin: 0;
+}
+
+.dorpdown:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+
+.dorpdown:hover .icon {
+    background: url(../images/chaoshi/header/2.jpg);
+}
+
+.dorpdown:hover i {
+    background-position: 0 -25px;
+}
+
+.dorpdown .dt {
+    position: relative;
+    padding-right: 16px;
+}
+
+.dorpdown .icon {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url(../images/chaoshi/header/1.jpg);
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.dd .dorpdown-layer {
+    left: -1px;
+}
+
+.dorpdown-layer {
+    top: 29px;
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: 24px;
+    z-index: 99;
+}
+
+#li-sendcity .dorpdown-layer {
+    width: 301px;
+    padding: 10px 0 10px 10px;
+}
+
+#li-sendcity .dorpdown-layer .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+
+#li-sendcity .dorpdown-layer .item a {
+    float: left;
+    padding: 0 8px;
+}
+
+#li-sendcity.dorpdown-layer a:hover {
+    background: #f1f1f1;
+}
+
+.dorpdown-layer a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+.dd-spacer {
+    position: absolute;
+    top: -7px;
+    height: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#li-sendcity .dd-spacer {
+    width: 96px;
+    left: 0;
+}
+
+
+/*header fr 部分*/
+
+#header li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.fore i {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(../images/chaoshi/header/3.png) 0 0 no-repeat;
+    position: absolute;
+    top: 5px;
+    left: -3px;
+}
+
+#li-myjd .dorpdown-layer {
+    width: 270px;
+}
+
+#li-myjd .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.user-info {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.u-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.u-pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.otherlist {
+    width: 255px;
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+#li-myjd .fore1,
+#li-myjd .fore2 {
+    float: left;
+    width: 126px;
+}
+
+.viewlist {
+    width: 240px;
+    padding: 0 15px 10px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+}
+
+.smt h4 {
+    float: left;
+}
+
+.smt .extra {
+    float: right;
+}
+
+.viewlist .item {
+    float: left;
+    padding: 4px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.viewlist .item img {
+    width: 50px;
+    height: 50px;
+}
+
+#li-apps .dorpdown-layer {
+    width: 250px;
+}
+
+#li-apps .dt {
+    padding-left: 15px;
+}
+
+#li-apps .dd-spacer {
+    width: 99px;
+    left: 0;
+}
+
+.apps-main {
+    position: relative;
+    width: 250px;
+    height: 195px;
+    overflow: hidden;
+    background: url(../images/chaoshi/header/apps.png);
+}
+
+#li-atte .dorpdown-layer {
+    width: 84px;
+}
+
+#li-atte .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+#li-serv .dorpdown-layer {
+    width: 170px;
+}
+
+#li-serv .dd-spacer {
+    width: 84px;
+    left: 0;
+}
+
+.item-client {
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.serv-item {
+    display: inline-block;
+    width: 65px;
+    padding-left: 15px;
+}
+
+.item-bus {
+    border-top: 1px dotted #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#li-navs .dorpdown-layer {
+    width: 1210px;
+    right: -1px;
+    padding: 20px 0 16px;
+}
+
+#li-navs .dd-spacer {
+    width: 84px;
+    right: 0;
+}
+
+#li-navs dl {
+    float: left;
+    width: 260px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+#li-navs .fore1 {
+    width: 347px;
+    border-left: none;
+}
+
+#li-navs dt {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#li-navs .navs-item {
+    width: 75px;
+    float: left;
+}
+
+#o-header-2013 {
+    width: 1210px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*logo部分*/
+
+#logo-2014 {
+    position: relative;
+    z-index: 12;
+    float: left;
+    width: 362px;
+    height: 60px;
+    padding: 20px 0px;
+}
+
+#logo-2014 .logo {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: transparent url("../images/chaoshi/logo-201305.png") no-repeat scroll 0px 0px;
+    text-indent: -20000px;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+#logo-2014 .extra {
+    position: absolute;
+    top: 15px;
+    left: 168px;
+    width: 180px;
+    height: 70px;
+    padding-left: 10px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+
+#channel {
+    float: left;
+    margin-right: 10px;
+    cursor: default;
+    font: 400 20px/70px "microsoft yahei";
+    color: #333;
+}
+
+#categorys-mini {
+    float: left;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    padding-top: 22px;
+    height: 27px;
+    font-family: simsun;
+}
+
+#categorys-mini .cw-icon {
+    color: #CCC;
+    position: relative;
+    width: 63px;
+    height: 25px;
+    border: 1px solid #CCC;
+    line-height: 25px;
+    z-index: 1;
+    background: #FFF none repeat scroll 0% 0%;
+    padding: 0px 5px;
+}
+
+.cw-icon {
+    cursor: default;
+}
+
+#categorys-mini .cw-icon h2 {
+    font-family: "Microsoft YaHei";
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+#categorys-mini .cw-icon i {
+    top: 9px;
+    right: 5px;
+    height: 7px;
+    font: 400 15px/15px consolas;
+}
+
+#categorys-mini .ci-right {
+    color: #6A6A6A;
+    transition: transform 0.1s ease-in 0s;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+#categorys-mini .cw-icon s {
+    position: relative;
+    top: -7px;
+    text-decoration: none;
+}
+
+#categorys-mini-main {
+    border: 1px solid #CCC;
+    position: absolute;
+    width: 152px;
+    padding: 13px;
+    margin-top: -1px;
+    background: #FFF none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+
+#categorys-mini-main h3 {
+    font-family: "Microsoft YaHei";
+    color: #666;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#categorys-mini-main a {
+    color: #666;
+    padding: 0px;
+    font-size: 12px;
+}
+
+#search-2014,
+#search-2014 .form {
+    width: auto;
+}
+
+#search-2014,
+#settleup-2014 {
+    margin-top: 32px;
+}
+
+#search-2014 {
+    position: relative;
+    z-index: 11;
+    float: left;
+}
+
+#shelper {
+    width: 455px;
+}
+
+#shelper {
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    border: 1px solid #CCC;
+    background: #FFF none repeat scroll 0% 0%;
+}
+
+ol,
+ul {
+    list-style: outside none none;
+}
+
+#search-2014 .form {
+    width: auto;
+}
+
+#search-2014 .form {
+    height: 36px;
+}
+
+#search-2014 .text {
+    width: 446px;
+}
+
+#search-2014 .text {
+    border-color: #D26B31;
+}
+
+#search-2014 .text {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    outline: 0px none;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+
+#search-2014 .button {
+    background: #D26B31 none repeat scroll 0% 0%;
+}
+
+#search-2014 .button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    border: medium none;
+    line-height: 1;
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cw-icon {
+    position: relative;
+}
+
+#search-2014 .cw-icon i {
+    top: 0px;
+    left: 0px;
+    width: 82px;
+    height: 36px;
+}
+
+.cw-icon .i,
+.cw-icon i {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+em,
+i,
+u {
+    font-style: normal;
+}
+
+#settleup-2014 {
+    margin-right: 65px;
+}
+
+#search-2014,
+#settleup-2014 {
+    margin-top: 32px;
+}
+
+#settleup-2014 {
+    float: right;
+    z-index: 11;
+    height: 36px;
+}
+
+.dorpdown {
+    position: relative;
+}
+
+#settleup-2014 .cw-icon {
+    width: 75px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    padding: 0px 28px 0px 36px;
+    background: #F9F9F9 none repeat scroll 0% 0%;
+    text-align: center;
+    line-height: 34px;
+}
+
+.cw-icon {
+    position: relative;
+    cursor: default;
+}
+
+
+}
+#settleup-2014 .ci-left {
+    top: 9px;
+    left: 18px;
+    width: 18px;
+    height: 16px;
+    background: transparent url("../images/chaoshi/jd2015img.png") no-repeat scroll 0px -58px;
+}
+.cw-icon .i,
+.cw-icon i {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#settleup-2014 .ci-right {
+    top: 11px;
+    right: 10px;
+    width: 7px;
+    height: 13px;
+    overflow: hidden;
+    font: 400 13px/13px simsun;
+    color: #999;
+}
+.cw-icon .i,
+.cw-icon i {
+    display: block;
+    position: absolute;
+}
+#settleup-2014 .ci-count {
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    display: inline-block;
+    padding: 1px 2px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFF;
+    background-color: #C81623;
+    border-radius: 7px 7px 7px 0px;
+    min-width: 12px;
+    text-align: center;
+}
+.cw-icon .i,
+.cw-icon i {
+    overflow: hidden;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.dorpdown-layer {
+    display: none;
+    position: absolute;
+}
+#settleup-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#settleup-content .loading {
+    display: block;
+    height: 50px;
+    background: transparent url("../images/chaoshi/loading.gif") no-repeat scroll center center;
+}
+#hotwords {
+    width: 518px;
+}
+#hotwords {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#hotwords a {
+    margin-right: 10px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.clear,
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0px;
+    line-height: 0;
+    font-size: 0px;
+}
+
+/*nav部分：*/
+#nav-2014 {
+    border-bottom-color: #D26B31;
+}
+#nav-2014 {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+#nav-2014 .w {
+    position: relative;
+    z-index: 9;
+    height: 44px;
+}
+.root61 .w {
+    width: 1210px;
+}
+.w {
+    margin: 0px auto;
+}
+#nav-2014 .w .w-spacer {
+    display: none;
+}
+#nav-2014 .w-spacer {
+    position: absolute;
+    top: -1px;
+    z-index: 1;
+    width: 100%;
+    height: 44px;
+    border-top: 1px solid #DDD;
+    border-bottom: 2px solid #B1191A;
+}
+#categorys-2014 {
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 210px;
+    height: 44px;
+    overflow: visible;
+    background: #B1191A none repeat scroll 0% 0%;
+}
+#categorys-2014 .dt {
+    padding: 0px 20px;
+    background: #D26B31 none repeat scroll 0% 0%;
+}
+#categorys-2014 .dt {
+    font: 400 15px/44px "microsoft yahei";
+    color: #FFF;
+}
+#navitems-2014 {
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+#navitems-2014 ul {
+    padding-left: 20px;
+}
+#navitems-2014 .spacer,
+#navitems-2014 a,
+#navitems-2014 li,
+#navitems-2014 ul {
+    float: left;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#navitems-2014 .spacer,
+#navitems-2014 a,
+#navitems-2014 li,
+#navitems-2014 ul {
+    float: left;
+}
+#navitems-2014 .curr a {
+    color: #C81623;
+}
+#navitems-2014 a {
+    height: 44px;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    font: 400 15px/44px "microsoft yahei";
+    color: #333;
+}
+#treasure {
+    float: right;
+}
+.clear,
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0px;
+    line-height: 0;
+    font-size: 0px;
+}
+
+/*sm-layout部分：*/
+#sm-layout {
+    margin-top: 0px;
+}
+#sm-layout {
+    background: #FFF7E4 none repeat scroll 0% 0%;
+    padding-bottom: 10px;
+}
+#firstScreen {
+    height: 412px;
+}
+#firstScreen {
+    position: relative;
+    height: 412px;
+    margin-bottom: 20px;
+}
+#firstScreen .w {
+    width: 1210px;
+    height: 495px;
+    margin: 0px auto;
+}
+#smCategorys {
+    float: left;
+    width: 210px;
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    left: 0px;
+}
+#smCategorys,
+#smCategorys .menu {
+    background: #E88A56 none repeat scroll 0% 0%;
+}
+#smCategorys .sm-c-wrap {
+    position: static;
+    width: 210px;
+    margin: 0px;
+}
+#smCategorys .menu {
+    height: 412px;
+    width: 210px;
+}
+#smCategorys,
+#smCategorys .menu {
+    background: #E88A56 none repeat scroll 0% 0%;
+}
+#smCategorys .menu .item {
+    width: 150px !important;
+    padding: 0px 0px 0px 40px;
+    margin: 0px 10px;
+}
+.root61 #smCategorys .menu .item {
+    float: none;
+    height: 81px;
+    border-width: 0px 0px 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #E8E8E8;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+#smCategorys .menu .fore1 {
+    border-top: 0px none !important;
+}
+#smCategorys .menu .item {
+    border-bottom: 0px none !important;
+    transition: none 0s ease 0s;
+    z-index: 999;
+}
+#smCategorys .menu .item {
+    position: relative;
+}
+#smCategorys .menu .item i.i1 {
+    background-position: 0px -49px;
+}
+#smCategorys .menu .item i {
+    top: 14px;
+    left: 5px;
+}
+#smCategorys .menu .item i {
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background: transparent url("../images/chaoshi/index.supermarket.menu.png") no-repeat scroll 0% 0%;
+    transition: all 0.25s ease 0s;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#smCategorys .menu .item .blank {
+    width: 210px;
+    height: 100%;
+}
+#smCategorys .menu .item .blank {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #FFF none repeat scroll 0% 0%;
+    right: 0px;
+    top: 0px;
+}
+#smCategorys .menu .item h3 {
+    padding-top: 20px;
+    color: #FFF;
+}
+#smCategorys .menu .item h3 {
+    position: relative;
+    z-index: 2;
+    height: 20px;
+    line-height: 20px;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+#smCategorys .menu .item h3 a {
+    color: #FFF;
+    padding-left: 0px;
+}
+a {
+    text-decoration: none;
+}
+#smCategorys .menu .item .ext {
+    position: relative;
+    z-index: 2;
+    line-height: 18px;
+}
+#smCategorys .menu .item .ext a {
+    color: #FFF;
+}
+#smCategorys .menu .item .ext a {
+    margin-right: 5px;
+}
+a {
+    text-decoration: none;
+}
+#smCategorys .menu .item b {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: -15px;
+    top: 50%;
+    margin-top: -3px;
+    border-color: transparent transparent transparent #D26B31;
+    border-style: solid;
+    border-width: 6px 0px 6px 6px;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0;
+}
+#smCategorys .menu .item i.i2 {
+    background-position: -39px -49px;
+}
+#smCategorys .menu .item i.i3 {
+    background-position: -80px -49px;
+}
+#smCategorys .menu .item i.i4 {
+    background-position: -120px -49px;
+}
+#smCategorys .menu .fore5 i {
+    left: -2px;
+}
+#smCategorys .menu .item i.i5 {
+    background-position: -159px -47px;
+}
+#smCategorys .sub-menu {
+    top: 0px;
+    left: 210px;
+}
+#smCategorys .sub-menu {
+    position: absolute;
+    overflow: hidden;
+    width: 395px;
+    height: 412px;
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+#smCategorys .sub-menu .item {
+    padding: 25px 12px 0px;
+}
+#smCategorys .sub-menu .item .i-ext {
+    margin-bottom: 12px;
+    height: 44px;
+    overflow: hidden;
+}
+#smCategorys .sub-menu .item .i-ext a {
+    padding: 0px 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    border-right: 1px solid #DDD;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#grape {
+    float: right;
+    position: relative;
+    z-index: 6;
+    top: 8px;
+    height: 394px;
+    width: 274px;
+    background: #F8F8F8 none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+#grape .grape-ban {
+    height: 125px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#grape .mt {
+    position: absolute;
+    right: 81px;
+    top: 130px;
+    padding-top: 12px;
+    width: 69px;
+    height: 44px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    color: #FFF;
+    background: #E54042 none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#grape .mt span {
+    font-weight: 700;
+    font-size: 16px;
+}
+#grape .mc {
+    padding: 5px;
+    height: 260px;
+    overflow: hidden;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#grape .mc .fl {
+    width: 114px;
+    overflow: hidden;
+}
+.fl {
+    float: left;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#grape .mc .fr {
+    padding: 63px 15px 0px 5px;
+    width: 130px;
+    background: #F8F8F8 none repeat scroll 0% 0%;
+}
+.fr {
+    float: right;
+}
+#grape .mc .p-name {
+    height: 57px;
+    display: inline-block;
+    font: 400 12px/19px sumson;
+    color: #333;
+    overflow: hidden;
+}
+#grape .mc .p-price {
+    padding: 4px 0px 12px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E4393C;
+}
+#grape .mc .p-promotion {
+    height: 57px;
+    line-height: 19px;
+    color: #FF9600;
+    overflow: hidden;
+}
+#grape .mc .s-list {
+    clear: both;
+    margin-top: 5px;
+}
+#grape .s-list {
+    overflow: hidden;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#grape .s-list li {
+    float: left;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 6px;
+}
+#grape .s-list li a {
+    padding: 2px;
+    overflow: hidden;
+}
+#grape .s-list li a {
+    display: block;
+    height: 44px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.sm-slider {
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 412px;
+}
+.sm-slider .sm-s-wrap {
+    height: 412px;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+.sm-slider .sm-s-wrap .item {
+    height: 412px;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.sm-slider .sm-s-wrap .item .i-wrap {
+    width: 1210px;
+}
+.sm-slider .sm-s-wrap .item .i-wrap {
+    height: 412px;
+    margin: 0px auto;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-inner {
+    margin-left: 210px;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-inner {
+    position: relative;
+    width: 710px;
+    height: 100%;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-img.site-1 {
+    z-index: 2;
+    left: 38px;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-img {
+    position: absolute;
+    display: block;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-img img {
+    background: transparent url("../images/chaoshi/loading-jd.gif") no-repeat scroll 50% 50%;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-img.site-2 {
+    top: 20px;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-img {
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+.sm-slider .sm-s-wrap .item .i-wrap .i-link {
+    position: absolute;
+    z-index: 4;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+.sm-slider .sm-s-trigger {
+    margin-left: -395px;
+    width: 726px;
+}
+.sm-slider .sm-s-trigger {
+    left: 50%;
+}
+.sm-slider .sm-s-trigger {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+}
+.sm-slider .sm-s-trigger a {
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 20px;
+    background: rgba(150, 150, 150, 0.1) none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9), 0px 1px 1px rgba(0, 0, 0, 0.1) inset, 0px 0px 0px 3px rgba(255, 255, 255, 0.9);
+    margin: 0px 8px 15px;
+    border-radius: 50%;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#seckilling {
+    float: left;
+    overflow: visible;
+    width: 910px;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .describe {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext .filter-item.selected {
+    padding: 0px 7px;
+    border: 2px solid #E33A3D;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-wrap .mt .ext .filter-item.selected b {
+    display: block;
+}
+.sm-wrap .mt .ext .filter-item b {
+    position: absolute;
+    vertical-align: middle;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+}
+#seckilling .mc {
+    height: 440px;
+    background: #FFF none repeat scroll 0% 0%;
+    position: relative;
+    overflow: visible;
+}
+#seckilling .mc .sk-time {
+    right: 44px;
+    top: 16px;
+}
+#seckilling .mc .sk-time {
+    position: absolute;
+    z-index: 5;
+}
+#seckilling .mc .sk-time .sk-t-text {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    width: 70px;
+}
+#seckilling .mc .sk-time .sk-t-clock {
+    top: 24px;
+    left: -36px;
+}
+#seckilling .mc .sk-time .sk-t-clock {
+    width: 141px;
+    position: absolute;
+}
+#seckilling .mc .sk-tab {
+    width: 510px;
+}
+#seckilling .mc .sk-tab {
+    position: absolute;
+    left: 195px;
+    padding-top: 70px;
+    z-index: 5;
+}
+#seckilling .mc .sk-tab .line {
+    display: block;
+    height: 3px;
+    background: #FFF none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#seckilling .mc .sk-tab .sk-clock.noon {
+    background-position: -66px 0px;
+}
+#seckilling .mc .sk-tab .sk-clock {
+    position: absolute;
+    z-index: 6;
+    top: 5px;
+    width: 56px;
+    height: 64px;
+    background: transparent url("../images/chaoshi/index.supermarket.seckilling.clock.png") no-repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.left {
+    left: -75px;
+    top: 43px;
+}
+#seckilling .mc .sk-tab .sk-tab-item a {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    padding-top: 20px;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+}
+#seckilling .mc .sk-tab .sk-tab-item a b {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin: 0px auto 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease 0s;
+}
+#seckilling .mc .sk-tab .sk-tab-item a span {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+#seckilling .mc .sk-tab .sk-tab-item a span em {
+    display: none;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.center {
+    left: 180px;
+    top: 43px;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.curr b {
+    background: #FFAD00 none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 0px 6px rgba(255, 173, 0, 0.34);
+}
+#seckilling .mc .sk-tab .sk-tab-item a b {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 0px auto 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.curr span {
+    color: #FFF;
+    background: #F87002 none repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-tab .sk-tab-item a span {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.killing span em {
+    display: inline;
+}
+#seckilling .mc .sk-tab .sk-tab-item a.right {
+    right: -75px;
+    top: 43px;
+}
+#seckilling .mc .sk-tab .sk-tab-item a span em {
+    display: none;
+}
+#seckilling .mc .sk-con {
+    width: 910px;
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+}
+#seckilling .mc .sk-con .sk-item.morning {
+    z-index: 1;
+    background: #A1E0D3 url("../images/chaoshi/index.supermarket.seckilling.bg-l-2.png") no-repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-con .sk-item {
+    width: 100%;
+    height: 440px;
+    position: absolute;
+}
+#seckilling .mc .sk-con .sk-item.morning .sk-item-bg .sun {
+    left: -23px;
+    top: 64px;
+    background: transparent url("../images/chaoshi/sun.png") no-repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-con .sk-item .sk-item-bg .sun {
+    display: block;
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    animation: 50s linear 0s normal none infinite running spinAround;
+}
+#seckilling .mc .sk-con .sk-item.noon {
+    background: #FFD782 url("../images/chaoshi/sun2.png") no-repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-con .sk-item.selected {
+    position: absolute;
+}
+#seckilling .mc .sk-con .sk-item ul {
+    padding: 120px 0px 20px 30px;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#seckilling .mc .sk-con .sk-item ul {
+    position: relative;
+    z-index: 10;
+}
+#seckilling .mc .sk-con .sk-item ul li {
+    width: 280px;
+}
+#seckilling .mc .sk-con .sk-item ul li {
+    position: relative;
+    float: left;
+    margin-right: 6px;
+    height: 300px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-img {
+    padding: 32px 0px 0px;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#seckilling .mc .sk-con .sk-item ul {
+    padding: 120px 0px 20px 30px;
+}
+#seckilling .mc .sk-con .sk-item ul {
+    position: relative;
+    z-index: 10;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#seckilling .mc .sk-con .sk-item ul li {
+    width: 280px;
+}
+#seckilling .mc .sk-con .sk-item ul li {
+    position: relative;
+    float: left;
+    margin-right: 6px;
+    height: 300px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-img {
+    padding: 32px 0px 0px;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-name a {
+    font-size: 14px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-price {
+    padding: 0px 20px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-price strong {
+    font-size: 20px;
+    color: #E4393C;
+    margin-right: 10px;
+}
+.p-price strong {
+    font-family: Verdana;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-btn {
+    right: 8px;
+    bottom: 15px;
+}
+#seckilling .mc .sk-con .sk-item ul li .p-btn {
+    position: absolute;
+}
+.btn-m.seckilling {
+    width: 90px;
+}
+.btn-m {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #DF3133;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #E64648, #DF3133);
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#freshSale {
+    width: 290px;
+    float: right;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .describe {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+#freshSale .mc {
+    height: 440px;
+    background: #FFF none repeat scroll 0% 0%;
+    padding: 0px 20px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#freshSale .mc .p-img {
+    padding: 20px 0px;
+    text-align: center;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#freshSale .mc .p-name {
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.p-name {
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#freshSale .mc .p-ext {
+    line-height: 18px;
+    height: 56px;
+    margin-bottom: 10px;
+    color: #999;
+    overflow: hidden;
+}
+#freshSale .mc .p-price {
+    font-family: Verdana;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.p-price strong {
+    font-family: Verdana;
+}
+#freshSale .mc .p-price strong {
+    font-size: 20px;
+    color: #E4393C;
+    margin-right: 10px;
+}
+#freshSale .mc .p-price del {
+    color: #999;
+}
+.clear,
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0px;
+    line-height: 0;
+    font-size: 0px;
+}
+.w {
+    width: 1210px;
+    margin: 0px auto;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#snacks {
+    overflow: hidden;
+    float: left;
+    width: 808px;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .filter-item.selected {
+    padding: 0px 7px;
+    border: 2px solid #E33A3D;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-wrap .mt .ext .filter-item b {
+    position: absolute;
+    vertical-align: middle;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 8px;
+    border: 1px solid #CDCDCD;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-wrap .mt .ext .filter-item b {
+    position: absolute;
+    vertical-align: middle;
+    display: none;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+}
+#snacks .mc {
+    height: 546px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#snacks .mc .item .sub-list {
+    left: 30px;
+}
+#snacks .mc .item .sub-list {
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+#snacks .mc .item .sub-list a.fore1 {
+    top: 0px;
+    left: 0px;
+}
+#snacks .mc .item .sub-list a.fore1,
+#snacks .mc .item .sub-list a.fore2 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 129px;
+    height: 129px;
+}
+#snacks .mc .item .sub-list a.selected,
+#snacks .mc .item .sub-list a:hover {
+    text-decoration: none;
+    background: #E33A3D none repeat scroll 0% 0%;
+    color: #FFF;
+}
+#snacks .mc .item .sub-list a {
+    position: absolute;
+    display: table;
+    text-align: center;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.1s ease 0s, color 0.1s ease 0s;
+}
+#snacks .mc .item .sub-list a strong {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+#snacks .mc .item .sub-list a.fore1 em {
+    padding: 0px 30px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#snacks .mc .item .sub-con {
+    padding: 20px 0px 0px 272px;
+}
+#snacks .mc .item .sub-con {
+    height: 506px;
+    overflow: hidden;
+    position: relative;
+}
+.clearfix {}
+ol,
+ul {
+    list-style: outside none none;
+}
+#snacks .mc .item .sub-con li {
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0px 10px 10px 0px;
+}
+#snacks .mc .item .sub-con li .p-img {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#snacks .mc .item .sub-con li .p-img img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.4s ease 0s;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#snacks .mc .item .sub-con li .p-price {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    background: #E33A3D none repeat scroll 0% 0%;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+#snacks .mc .item .sub-con li .p-ext {
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    bottom: 0px;
+    background: #2C3F52 none repeat scroll 0% 0%;
+    color: #FFF;
+    z-index: 5;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: perspective(300px) rotateX(-90deg);
+    transform-origin: 50% 100% 0px;
+    transition: all 0.35s ease 0s;
+}
+#snacks .mc .item .sub-con li .p-ext .p-name {
+    color: #FFF;
+    line-height: 18px;
+    height: 18px;
+    padding: 6px 15px 0px;
+    margin-bottom: 6px;
+}
+.p-name {
+    overflow: hidden;
+}
+#snacks .mc .item .sub-con li .p-ext .p-name a {
+    color: #FFF;
+}
+a {
+    text-decoration: none;
+}
+#snacks .mc .item .sub-con li .p-ext .p-btn {
+    padding: 0px 15px;
+}
+.btn-s.addCart {
+    width: 86px;
+}
+.btn-s {
+    display: inline-block;
+    height: 19px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #F3F2F2;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #F7F7F7, #F3F2F2);
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#snacks {
+    width: 808px;
+}
+#snacks {
+    overflow: hidden;
+    float: left;
+}
+#snacks .mc {
+    height: 546px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#snacks .mc .item .sub-list {
+    left: 30px;
+}
+#snacks .mc .item .sub-list {
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+#snacks .mc .item .sub-list a.fore1 {
+    top: 0px;
+    left: 0px;
+}
+#snacks .mc .item .sub-list a.fore1,
+#snacks .mc .item .sub-list a.fore2 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 129px;
+    height: 129px;
+}
+#snacks .mc .item .sub-list a.selected,
+#snacks .mc .item .sub-list a:hover {
+    text-decoration: none;
+    background: #E33A3D none repeat scroll 0% 0%;
+    color: #FFF;
+}
+#snacks .mc .item .sub-list a {
+    position: absolute;
+    display: table;
+    text-align: center;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.1s ease 0s, color 0.1s ease 0s;
+}
+#snacks .mc .item .sub-list a strong {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+#snacks .mc .item .sub-list a.fore1 em {
+    padding: 0px 30px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#snacks .mc .item .sub-list a.fore2 {
+    top: 139px;
+    left: 0px;
+}
+#snacks .mc .item .sub-list a.fore1,
+#snacks .mc .item .sub-list a.fore2 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 129px;
+    height: 129px;
+}
+#snacks .mc .item .sub-list a {
+    position: absolute;
+    display: table;
+    background: #EEE none repeat scroll 0% 0%;
+    text-align: center;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+    color: #B2B2B2;
+    cursor: pointer;
+    transition: background 0.1s ease 0s, color 0.1s ease 0s;
+}
+#snacks .mc .item .sub-list a.fore2 em {
+    padding: 0px 18px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#snacks .mc .item .sub-list a.fore3 {
+    top: 0px;
+    left: 139px;
+}
+#snacks .mc .item .sub-list a.fore3,
+#snacks .mc .item .sub-list a.fore4,
+#snacks .mc .item .sub-list a.fore5 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 83px;
+    height: 83px;
+}
+#snacks .mc .item .sub-list a.fore3 em,
+#snacks .mc .item .sub-list a.fore4 em,
+#snacks .mc .item .sub-list a.fore5 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a.fore4 {
+    top: 93px;
+    left: 139px;
+}
+#snacks .mc .item .sub-list a.fore3,
+#snacks .mc .item .sub-list a.fore4,
+#snacks .mc .item .sub-list a.fore5 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 83px;
+    height: 83px;
+}
+#snacks .mc .item .sub-list a.fore3 em,
+#snacks .mc .item .sub-list a.fore4 em,
+#snacks .mc .item .sub-list a.fore5 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+#snacks .mc .item .sub-list a.fore5 {
+    top: 185px;
+    left: 139px;
+}
+#snacks .mc .item .sub-list a.fore3,
+#snacks .mc .item .sub-list a.fore4,
+#snacks .mc .item .sub-list a.fore5 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 83px;
+    height: 83px;
+}
+#snacks .mc .item .sub-list a.fore3 em,
+#snacks .mc .item .sub-list a.fore4 em,
+#snacks .mc .item .sub-list a.fore5 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+#snacks .mc .item .sub-list a.fore6 {
+    top: 278px;
+    left: 0px;
+}
+#snacks .mc .item .sub-list a.fore6,
+#snacks .mc .item .sub-list a.fore7,
+#snacks .mc .item .sub-list a.fore9 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 107px;
+    height: 107px;
+}
+#snacks .mc .item .sub-list a.fore6 em,
+#snacks .mc .item .sub-list a.fore7 em,
+#snacks .mc .item .sub-list a.fore9 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+#snacks .mc .item .sub-list a.fore7 {
+    top: 278px;
+    left: 116px;
+}
+#snacks .mc .item .sub-list a.fore6,
+#snacks .mc .item .sub-list a.fore7,
+#snacks .mc .item .sub-list a.fore9 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 107px;
+    height: 107px;
+}
+#snacks .mc .item .sub-list a.fore6 em,
+#snacks .mc .item .sub-list a.fore7 em,
+#snacks .mc .item .sub-list a.fore9 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+#snacks .mc .item .sub-list a.fore8 {
+    top: 395px;
+    left: 0px;
+}
+#snacks .mc .item .sub-list a.fore8 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 223px;
+    height: 107px;
+}
+#snacks .mc .item .sub-list a.fore8 em {
+    padding: 0px;
+}
+#snacks .mc .item .sub-list a em {
+    display: block;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#freezer {
+    width: 392px;
+    float: right;
+    overflow: visible;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .filter-item.selected {
+    padding: 0px 7px;
+    border: 2px solid #E33A3D;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-wrap .mt .ext .filter-item.selected b {
+    display: block;
+}
+.sm-wrap .mt .ext .filter-item b {
+    position: absolute;
+    vertical-align: middle;
+    display: none;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+}
+#freezer .mc {
+    height: 546px;
+    background: transparent url(".//images/chaoshi/index.supermarket.freezerBg.png") no-repeat scroll 0px -6px;
+    overflow: visible;
+}
+#freezer .mc ul.drink-list {
+    padding: 45px 0px 0px 31px;
+}
+.clearfix {}
+ol,
+ul {
+    list-style: outside none none;
+}
+#freezer .mc ul.drink-list li {
+    float: left;
+    width: 56px;
+    text-align: center;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+#freezer .mc ul.drink-list li .d-l-cart {
+    position: absolute;
+    z-index: 5;
+    visibility: hidden;
+    top: -86px;
+    left: -47px;
+    background: #FFF none repeat scroll 0% 0%;
+    border: 1px solid #EDE6D4;
+    width: 146px;
+    height: 88px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+#freezer .mc ul.drink-list li .p-name {
+    line-height: 18px;
+    height: 36px;
+    padding: 12px 12px 0px;
+    margin-bottom: 8px;
+}
+.p-name {
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#freezer .mc ul.drink-list .p-btn {
+    height: 21px;
+    overflow: hidden;
+}
+#freezer .mc ul.drink-list .btn-s {
+    text-align: left;
+    width: 118px;
+    padding: 0px 4px;
+    margin-bottom: 5px;
+}
+.btn-s {
+    display: inline-block;
+    height: 19px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    background-color: #F3F2F2;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #F7F7F7, #F3F2F2);
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#freezer .mc ul.drink-list .btn-s i {
+    display: inline-block;
+    margin: 2px 5px 0px 0px;
+    width: 18px;
+    height: 15px;
+}
+#freezer .mc ul.drink-list .btn-s i,
+#freezer .mc ul.drink-list .btn-s span,
+#freezer .mc ul.drink-list .btn-s strong {
+    vertical-align: top;
+    overflow: hidden;
+    cursor: pointer;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#freezer .mc ul.drink-list .btn-s span {
+    display: none;
+    text-align: right;
+    width: 28px;
+    margin-right: 5px;
+}
+#freezer .mc ul.drink-list .btn-s i,
+#freezer .mc ul.drink-list .btn-s span,
+#freezer .mc ul.drink-list .btn-s strong {
+    vertical-align: top;
+    overflow: hidden;
+    height: 18px;
+    cursor: pointer;
+}
+#freezer .mc ul.drink-list .btn-s strong {
+    padding-left: 8px;
+    color: #E4393C;
+    font-weight: 400;
+}
+#freezer .mc ul.drink-list .btn-s i,
+#freezer .mc ul.drink-list .btn-s span,
+#freezer .mc ul.drink-list .btn-s strong {
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    height: 18px;
+    cursor: pointer;
+}
+#freezer .mc ul.drink-list .btn-s span em {
+    vertical-align: top;
+}
+em,
+i,
+u {
+    font-style: normal;
+}
+#freezer .mc ul.drink-list li .d-l-arrow {
+    position: absolute;
+    overflow: hidden;
+    font-style: normal;
+    font-family: simsun;
+    font-size: 12px;
+    text-shadow: 0px 0px 2px #CCC;
+    height: 6px;
+    width: 12px;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -6px;
+}
+#freezer .mc ul.drink-list li .d-l-arrow em {
+    color: #EDE6D4;
+    top: -8px;
+}
+#freezer .mc ul.drink-list li .d-l-arrow em,
+#freezer .mc ul.drink-list li .d-l-arrow i {
+    position: absolute;
+    left: 0px;
+    font-style: normal;
+}
+#freezer .mc {
+    height: 546px;
+    background: transparent url("../images/chaoshi/index.supermarket.freezerBg.png") no-repeat scroll 0px -6px;
+    overflow: visible;
+}
+#freezer .mc ul.drink-list li .d-l-arrow i {
+    color: #FFF;
+    text-shadow: none;
+    top: -9px;
+}
+#freezer .mc ul.drink-list li .d-l-arrow em,
+#freezer .mc ul.drink-list li .d-l-arrow i {
+    position: absolute;
+    left: 0px;
+    font-style: normal;
+}
+#freezer .mc ul.drink-list li img {
+    background: transparent none repeat scroll 0px 0px;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.clear,
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0px;
+    line-height: 0;
+    font-size: 0px;
+}
+.w {
+    width: 1210px;
+    margin: 0px auto;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .filter-item.selected {
+    padding: 0px 7px;
+    border: 2px solid #E33A3D;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-wrap .mt .ext .filter-item {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 8px;
+    border: 1px solid #CDCDCD;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-right: 3px;
+    transition: border-color 0.1s ease 0s, color 0.1s ease 0s;
+}
+.sm-wrap .mt .ext .filter-item.selected b {
+    display: block;
+}
+.sm-wrap .mt .ext .filter-item b {
+    position: absolute;
+    vertical-align: middle;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+}
+#freshExpress .mc {
+    height: 345px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#freshExpress .mc .item {
+    width: 100%;
+    height: 100%;
+}
+#freshExpress .mc .item .fe-pic {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    z-index: 5;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#freshExpress .mc .item ul.fe-list {
+    padding: 28px 0px 0px 445px;
+}
+#freshExpress .mc .item ul.fe-list {
+    height: 296px;
+    position: relative;
+    overflow: hidden;
+}
+.clearfix {}
+ol,
+ul {
+    list-style: outside none none;
+}
+#freshExpress .mc .item ul.fe-list li {
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+    width: 138px;
+    height: 138px;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+#freshExpress .mc .item ul.fe-list li .p-img {
+    width: 138px;
+    height: 138px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+#freshExpress .mc .item ul.fe-list li .p-price {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    background: #E33A3D none repeat scroll 0% 0%;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+.p-price strong {
+    font-family: Verdana;
+}
+#freshExpress .mc .item ul.fe-list li .p-price strong {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+#freshExpress .mc .item ul.fe-list li .p-ext {
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    bottom: 0px;
+    background: #2C3F52 none repeat scroll 0% 0%;
+    color: #FFF;
+    z-index: 5;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: perspective(300px) rotateX(-95deg);
+    transform-origin: 50% 100% 0px;
+    transition: all 0.35s ease 0s;
+}
+#freshExpress .mc .item ul.fe-list li .p-ext .p-name {
+    color: #FFF;
+    line-height: 18px;
+    height: 18px;
+    padding: 6px 10px 0px;
+    margin-bottom: 4px;
+}
+.p-name {
+    overflow: hidden;
+}
+#freshExpress .mc .item ul.fe-list li .p-ext .p-name a {
+    color: #FFF;
+}
+#freshExpress .mc .item ul.fe-list li .p-ext .p-btn {
+    padding: 0px 10px;
+}
+.btn-s.addCart {
+    width: 86px;
+}
+.btn-s {
+    display: inline-block;
+    height: 19px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #F3F2F2;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #F7F7F7, #F3F2F2);
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#freshExpress .mc {
+    height: 345px;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#freshExpress .mc .item {
+    width: 100%;
+    height: 100%;
+}
+#freshExpress .mc .item .fe-pic {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    z-index: 5;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#freshExpress .mc .item ul.fe-list {
+    padding: 28px 0px 0px 445px;
+}
+#freshExpress .mc .item ul.fe-list {
+    height: 296px;
+    position: relative;
+    overflow: hidden;
+}
+.clearfix {}
+ol,
+ul {
+    list-style: outside none none;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+.root61 #wineCabinet {
+    width: 720px;
+}
+#wineCabinet {
+    float: left;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .describe {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+#wineCabinet .mc {
+    height: 350px;
+    overflow: hidden;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#wineCabinet .mc a {
+    width: 240px;
+}
+#wineCabinet .mc a {
+    float: left;
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#grainOils {
+    width: 480px;
+}
+#grainOils {
+    float: right;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .describe {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+#grainOils .mc {
+    height: 350px;
+    overflow: hidden;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#grainOils .mc a {
+    width: 240px;
+}
+#grainOils .mc a {
+    float: right;
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#sm-layout .sm-wrap.m {
+    margin-bottom: 20px;
+}
+#cookingGeology {
+    position: relative;
+}
+.sm-wrap .mt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-wrap .mt h2 {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.mt h2,
+.smt h3 {
+    font-family: "microsoft yahei";
+}
+.sm-wrap .mt .ext {
+    float: left;
+}
+.sm-wrap .mt .ext .describe {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+#cookingGeology .mc {
+    height: 469px;
+    background: #FFF7E4 none repeat scroll 0% 0%;
+    position: relative;
+    overflow: visible;
+}
+#cookingGeology .mc .cg-wrap {
+    width: 605px;
+}
+#cookingGeology .mc .cg-wrap.left {
+    left: 0px;
+    top: 0px;
+    background: transparent url(".//images/chaoshi/cookingGeology.left2014.png") no-repeat scroll center top;
+}
+#cookingGeology .mc .cg-wrap {
+    position: absolute;
+    z-index: 5;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab {
+    position: static;
+    left: 0px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab {
+    position: relative;
+    z-index: 5;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-label {
+    background-position: -22px 0px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-label {
+    position: absolute;
+    z-index: 6;
+    width: 56px;
+    height: 64px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore1 {
+    left: 72px;
+    top: 137px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a {
+    position: absolute;
+    z-index: 5;
+    width: 45px;
+    padding-top: 5px;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    cursor: default;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a.curr b {
+    background: #FFAD00 none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 0px 6px rgba(255, 173, 0, 0.34);
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a b {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin: 0px auto 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.18s ease 0s;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a span {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 10px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con {
+    width: 579px;
+    padding: 198px 0px 12px 12px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con {
+    height: 258px;
+    overflow: hidden;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul {
+    width: 580px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li {
+    width: 144px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li {
+    float: left;
+    height: 258px;
+    margin-bottom: 20px;
+    border-right: 1px solid #E8E8E8;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img {
+    padding-top: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    padding: 0px 7px;
+    overflow: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.p-name {
+    overflow: hidden;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    padding: 0px 7px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name {
+    height: 36px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name a {
+    display: block;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore1 {
+    left: 72px;
+    top: 137px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore2 {
+    left: 118px;
+    top: 99px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore3 {
+    left: 165px;
+    top: 89px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore4 {
+    left: 216px;
+    top: 111px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore5 {
+    left: 270px;
+    top: 132px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore6 {
+    left: 316px;
+    top: 137px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore7 {
+    left: 361px;
+    top: 121px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore8 {
+    left: 407px;
+    top: 102px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore9 {
+    left: 453px;
+    top: 102px;
+}
+#cookingGeology .mc .cg-wrap.left .cg-w-tab .cg-w-t-item .fore10 {
+    left: 499px;
+    top: 114px;
+}
+#cookingGeology .mc .cg-wrap {
+    width: 605px;
+}
+#cookingGeology .mc .cg-wrap.left {
+    left: 0px;
+    top: 0px;
+    background: transparent url("../images/chaoshi/cookingGeology.left2014.png") no-repeat scroll center top;
+}
+#cookingGeology .mc .cg-wrap {
+    position: absolute;
+    z-index: 5;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    padding: 0px 7px;
+}
+.p-market strong,
+.p-price strong {
+    color: #E4393C;
+}
+.p-price strong {
+    font-family: Verdana;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext {
+    overflow: visible;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    padding: 0px 7px;
+}
+.btn-s.addCart {
+    width: 86px;
+}
+.btn-s {
+    display: inline-block;
+    height: 19px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #F3F2F2;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #F7F7F7, #F3F2F2);
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+#cookingGeology .mc .cg-wrap {
+    width: 605px;
+}
+#cookingGeology .mc .cg-wrap.right {
+    right: 0px;
+    top: 0px;
+    background: transparent url("../images/chaoshi/cookingGeology.right2014.png") no-repeat scroll center top;
+}
+#cookingGeology .mc .cg-wrap {
+    position: absolute;
+    z-index: 5;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab {
+    position: static;
+    left: 0px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab {
+    z-index: 5;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-label {
+    position: absolute;
+    z-index: 6;
+    width: 56px;
+    height: 64px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-label {
+    background-position: -92px 0px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore1 {
+    left: 78px;
+    top: 51px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item a {
+    width: 31px;
+    overflow: visible;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a {
+    position: absolute;
+    z-index: 5;
+    padding-top: 5px;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    cursor: default;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a.curr b {
+    background: #FFAD00 none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 0px 6px rgba(255, 173, 0, 0.34);
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a b {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin: 0px auto 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore1 span {
+    position: absolute;
+    margin: 0px;
+    width: 45px;
+    left: -43px;
+    top: 0px;
+    text-align: right;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item a span {
+    height: 25px;
+    line-height: 25px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-tab .cg-w-t-item a span {
+    display: block;
+    border-radius: 10px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore1 {
+    left: 78px;
+    top: 51px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore2 {
+    left: 108px;
+    top: 48px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore3 {
+    left: 72px;
+    top: 76px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore4 {
+    left: 111px;
+    top: 74px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore5 {
+    left: 310px;
+    top: 88px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore6 {
+    left: 273px;
+    top: 117px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore7 {
+    left: 280px;
+    top: 145px;
+}
+#cookingGeology .mc .cg-wrap.right .cg-w-tab .cg-w-t-item .fore8 {
+    left: 430px;
+    top: 72px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con {
+    width: 579px;
+    padding: 198px 0px 12px 12px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con {
+    height: 258px;
+    overflow: hidden;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul {
+    width: 580px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li {
+    width: 144px;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li {
+    float: left;
+    height: 258px;
+    margin-bottom: 20px;
+    border-right: 1px solid #E8E8E8;
+    background: #FFF none repeat scroll 0% 0%;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img {
+    padding-top: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-ext,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-img,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-name,
+#cookingGeology .mc .cg-wrap .cg-w-con ul li .p-price {
+    padding: 0px 7px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.p-detail,
+.p-img,
+.p-market,
+.p-name,
+.p-price,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+#sm-layout .sm-floor.m {
+    margin-bottom: 30px;
+}
+.sm-floor {
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+    height: 445px;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+.sm-floor .sf-tab {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 141px;
+    overflow: hidden;
+}
+.sm-floor .sf-tab ul {
+    display: block;
+}
+.clearfix {}
+ol,
+ul {
+    list-style: outside none none;
+}
+.sm-floor .sf-tab ul li {
+    width: 115px;
+    height: 44px;
+    margin-bottom: 7px;
+    vertical-align: middle;
+}
+.sm-floor .sf-tab ul li.selected a {
+    background: rgba(67, 172, 231, 0.8) none repeat scroll 0% 0%;
+    width: 115px;
+}
+.sm-floor .sf-tab ul li a {
+    float: right;
+    display: inline-block;
+    cursor: default;
+    border-radius: 22px 0px 0px 22px;
+    line-height: 44px;
+    height: 44px;
+    overflow: hidden;
+    color: #FFF;
+    text-indent: 18px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+}
+.sm-floor .sf-l {
+    position: absolute;
+    z-index: 1;
+    left: 16px;
+    top: 16px;
+}
+.sm-floor .sf-l h2 {
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    top: -16px;
+    left: -16px;
+    height: 116px;
+    width: 256px;
+    font-family: "microsoft yahei";
+    font-size: 48px;
+    line-height: 160px;
+    text-indent: 22px;
+    font-weight: 400;
+    color: #FFF;
+    background: rgba(67, 172, 231, 0.8) none repeat scroll 0% 0%;
+}
+.sm-floor .sf-l .sf-l-pic {
+    width: 240px;
+    height: 360px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.sm-floor .sf-r .item.selected {
+    visibility: visible;
+}
+.root61 .sm-floor .sf-r .item {
+    width: 810px;
+}
+.sm-floor .sf-r .item {
+    position: absolute;
+    padding-right: 144px;
+    top: 0px;
+    left: 256px;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+.sm-floor .sf-r .item .item-l li {
+    width: 161px;
+}
+.sm-floor .sf-r .item .item-l li {
+    float: left;
+    height: 222px;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.sm-floor .sf-r .item .item-l li .p-img,
+.sm-floor .sf-r .item .item-l li .p-name,
+.sm-floor .sf-r .item .item-l li .p-price {
+    padding: 0px 19px;
+    overflow: hidden;
+}
+.sm-floor .sf-r .item .item-l li .p-img {
+    padding-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.root61 .sm-floor .sf-r .item .item-l li .p-img,
+.root61 .sm-floor .sf-r .item .item-l li .p-name,
+.root61 .sm-floor .sf-r .item .item-l li .p-price {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.root61 .sm-floor .sf-r .item .item-l li .p-img,
+.root61 .sm-floor .sf-r .item .item-l li .p-name,
+.root61 .sm-floor .sf-r .item .item-l li .p-price {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.sm-floor .sf-r .item .item-l li .p-name {
+    height: 36px;
+    line-height: 18px;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.sm-floor .sf-r .item .item-l li .p-img,
+.sm-floor .sf-r .item .item-l li .p-name,
+.sm-floor .sf-r .item .item-l li .p-price {
+    padding: 0px 19px;
+    overflow: hidden;
+}
+.sm-floor .sf-r .item .item-l li .p-name a {
+    display: block;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.root61 .sm-floor .sf-r .item .item-l li .p-img,
+.root61 .sm-floor .sf-r .item .item-l li .p-name,
+.root61 .sm-floor .sf-r .item .item-l li .p-price {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.sm-floor .sf-r .item .item-l li .p-price {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.sm-floor .sf-r .item .item-l li .p-img,
+.sm-floor .sf-r .item .item-l li .p-name,
+.sm-floor .sf-r .item .item-l li .p-price {
+    padding: 0px 19px;
+    overflow: hidden;
+}
+.p-market strong,
+.p-price strong {
+    color: #E4393C;
+}
+.p-price strong {
+    font-family: Verdana;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.root61 .sm-floor .sf-r .item .item-l li .p-img,
+.root61 .sm-floor .sf-r .item .item-l li .p-name,
+.root61 .sm-floor .sf-r .item .item-l li .p-price {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.sm-floor .sf-r .item .item-l li .p-ext,
+.sm-floor .sf-r .item .item-l li .p-img,
+.sm-floor .sf-r .item .item-l li .p-name,
+.sm-floor .sf-r .item .item-l li .p-price {
+    padding: 0px 19px;
+    overflow: hidden;
+}
+.btn-s.addCart {
+    width: 86px;
+}
+.btn-s {
+    display: inline-block;
+    height: 19px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #F3F2F2;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top, #F7F7F7, #F3F2F2);
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.sm-floor .sf-tab ul li a {
+    float: right;
+    display: inline-block;
+    width: 90px;
+    cursor: default;
+    border-radius: 22px 0px 0px 22px;
+    line-height: 44px;
+    height: 44px;
+    overflow: hidden;
+    color: #FFF;
+    text-indent: 18px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+    transition: all 0.3s ease 0s;
+}
+.sm-floor .sf-r .item .item-r {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 144px;
+}
+ol,
+ul {
+    list-style: outside none none;
+}
+.sm-floor .sf-r .item .item-r li {
+    height: 89px;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: center;
+    vertical-align: middle;
+}
+.sm-floor .sf-r .item .item-r li a {
+    position: relative;
+    display: block;
+    padding: 9px 0px 10px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+.sm-floor .sf-r .item .item-r li a b {
+    cursor: pointer;
+    background: rgba(67, 172, 231, 0.8) none repeat scroll 0% 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 88px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.18s ease 0s;
+}
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+    overflow: hidden;
+}
+#sm-layout .sm-floor.m {
+    margin-bottom: 30px;
+}
+.sm-floor {
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+    height: 445px;
+}
+.sm-floor .sf-tab {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 141px;
+    overflow: hidden;
+}
+.sm-floor .sf-tab ul {
+    display: block;
+}
+
+.sm-floor .sf-tab ul li {
+    width: 115px;
+    height: 44px;
+    margin-bottom: 7px;
+    vertical-align: middle;
+}
+#smFloor2 .sf-l h2,
+#smFloor2 .sf-r .item .item-r li a b,
+#smFloor2 .sf-tab ul li.selected a {
+    background: rgba(255, 152, 30, 0.8) none repeat scroll 0% 0%;
+}
+.sm-floor .sf-tab ul li.selected a {
+    width: 115px;
+}
+.sm-floor .sf-tab ul li a {
+    float: right;
+    display: inline-block;
+    cursor: default;
+    border-radius: 22px 0px 0px 22px;
+    line-height: 44px;
+    height: 44px;
+    overflow: hidden;
+    color: #FFF;
+    text-indent: 18px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+}
+.sm-floor .sf-l {
+    position: absolute;
+    z-index: 1;
+    left: 16px;
+    top: 16px;
+}
+#smFloor2 .sf-l h2,
+#smFloor2 .sf-r .item .item-r li a b,
+#smFloor2 .sf-tab ul li.selected a {
+    background: rgba(255, 152, 30, 0.8) none repeat scroll 0% 0%;
+}
+.sm-floor .sf-l h2 {
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    top: -16px;
+    left: -16px;
+    height: 116px;
+    width: 256px;
+    font-family: "microsoft yahei";
+    font-size: 48px;
+    line-height: 160px;
+    text-indent: 22px;
+    font-weight: 400;
+    color: #FFF;
+}
+.sm-floor .sf-l .sf-l-pic {
+    width: 240px;
+    height: 360px;
+}
+
+.sm-floor .sf-r .item.selected {
+    visibility: visible;
+}
+.root61 .sm-floor .sf-r .item {
+    width: 810px;
+}
+.sm-floor .sf-r .item {
+    position: absolute;
+    padding-right: 144px;
+    top: 0px;
+    left: 256px;
+}
+.sm-floor .sf-r .item .item-r {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 144px;
+}
+.sm-floor .sf-r .item .item-r li {
+    height: 89px;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*service start*/
+#service {
+    margin-bottom: 20px;
+}
+#service .slogen {
+    position: relative;
+    height: 54px;
+    padding: 20px 0;
+    margin-bottom: 14px;
+    background: #F5F5F5;
+    text-align: center;
+}
+#service .slogen .item {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 302px;
+    height: 54px;
+    text-align: left;
+    vertical-align: middle;
+    font: 400 18px/50px "microsoft yahei";
+}
+#service .slogen .fore1 {
+    margin-left: -604px;
+}
+#service .slogen .fore2 {
+    margin-left: -304px;
+}
+#service .slogen .fore3 {
+    margin-left: 0;
+}
+#service .slogen .fore4 {
+    margin-left: 304px;
+}
+#service .slogen .item i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 220px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#service .slogen .fore1 i {
+    background-image: url(../images/chaoshi/service_items_1.png);
+}
+#service .slogen .fore2 i {
+    background-image: url(../images/chaoshi/service_items_2.png);
+}
+#service .slogen .fore3 i {
+    background-image: url(../images/chaoshi/service_items_3.png);
+}
+#service .slogen .fore4 i {
+    background-image: url(../images/chaoshi/service_items_4.png);
+}
+#service .slogen .item b {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #C81623;
+}
+#service dl {
+    float: left;
+    width: 275px;
+}
+#service dt {
+    padding: 6px 0;
+    font: 400 16px/24px "microsoft yahei";
+}
+#service dd {
+    line-height: 20px;
+}
+#service dl.fore5 {
+    width: 100px;
+}
+
+/*servive end*/
+
+/*footer start*/
+#footer {
+    border-top: 1px solid #E5E5E5;
+    padding: 20px 0 30px;
+    text-align: center;
+}
+#footer .links a {
+    margin: 0 10px;
+}
+#footer .copyright {
+    margin: 10px 0;
+}
+#footer .authentication a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+/*footer end*/

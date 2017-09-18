@@ -1,0 +1,104 @@
+/*通用样式*/
+
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.dt{
+	font-size: 12px;
+	color: #999999;
+	float: left;
+	margin: 0 10px;
+}
+.top_line1{
+	float: left;
+	width: 738px;
+	height: 1px;
+	border-top: 1px dotted #DFDFDF;
+	
+}
+.key{
+	float: left;
+	width: 110px;
+	height: 34px;
+	color: #666666;
+	line-height: 34px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+/*发现好货 品牌头条 排行版*/
+
+/*京东首页左边轮播图*/
+.case1{
+	width: 775px;
+	height: 30px;
+	line-height: 30px;
+}
+.case2{
+	width: 750px;
+	color: #666666;
+	overflow: hidden;
+}
+.case_sp{
+	float: left;
+	width: 1px ;
+	height: 16px;
+	background-color: #E0E0E0;
+	margin:7px 7px 0  0;
+}
+
+.bx_a{
+	float: left;
+	overflow: hidden;
+	padding: 15px 20px;
+}
+.cs2_a{
+	width: 670px;	
+	float: left;
+	border-bottom: 1px solid #EEEEEE;
+	margin-left: 10px;
+	overflow: hidden;
+	padding: 5px 0;
+}
+.h_line{
+	width: 700px;
+	height: 1px;
+	background-color: #EEEEEE;
+	float: right;
+	margin: 10px 0;
+}
+/*京东首页左边轮播图*/
+
+/*京东秒杀*/
+.skill_sx{
+	position: relative;
+	top: -10px;
+}
+/*京东秒杀END*/
+/*发现好货*/
+.goods_zy{
+	position: relative;
+	left: -10px;
+}
+/*发现好货END*/
+/*领券中心*/
+.ticket_zy{
+	left:40px;
+}
+/*领券中心END*/
+/*享品质*/
+.enjoy_zy{
+	left: -10px;
+}
+/*享品质*/
+/*登录页面*/
+.login_z{
+	position: absolute;
+	left:-80px;
+}
+/*登录页面END*/

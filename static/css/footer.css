@@ -1,0 +1,121 @@
+/*service start*/
+
+#service {
+    margin-bottom: 20px;
+}
+
+#service .slogen {
+    position: relative;
+    height: 54px;
+    padding: 20px 0;
+    margin-bottom: 14px;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+#service .slogen .item {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 302px;
+    height: 54px;
+    text-align: left;
+    vertical-align: mid;
+    font: 400 18px/50px "microsoft yahei";
+}
+
+#service .slogen .fore1 {
+    margin-left: -604px;
+}
+
+#service .slogen .fore2 {
+    margin-left: -304px;
+}
+
+#service .slogen .fore3 {
+    margin-left: 0;
+}
+
+#service .slogen .fore4 {
+    margin-left: 304px;
+}
+
+#service .slogen .item i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 220px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#service .slogen .fore1 i {
+    background-image: url(../images/fashion/service_items_1.png);
+}
+
+#service .slogen .fore2 i {
+    background-image: url(../images/fashion/service_items_2.png);
+}
+
+#service .slogen .fore3 i {
+    background-image: url(../images/fashion/service_items_3.png);
+}
+
+#service .slogen .fore4 i {
+    background-image: url(../images/fashion/service_items_4.png);
+}
+
+#service .slogen .item b {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #C81623;
+}
+
+#service dl {
+    float: left;
+    width: 275px;
+}
+
+#service dt {
+    padding: 6px 0;
+    font: 400 16px/24px "microsoft yahei";
+}
+
+#service dd {
+    line-height: 20px;
+}
+
+#service dl.fore5 {
+    width: 100px;
+}
+
+
+/*servive end*/
+
+
+/*footer start*/
+
+#footer {
+    border-top: 1px solid #E5E5E5;
+    padding: 20px 0 30px;
+    text-align: center;
+}
+
+#footer .links a {
+    margin: 0 10px;
+}
+
+#footer .copyright {
+    margin: 10px 0;
+}
+
+#footer .authentication a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+
+/*footer end*/
